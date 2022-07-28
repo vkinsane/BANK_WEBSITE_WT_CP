@@ -1,0 +1,105 @@
+.nav-text {
+  font-weight: bold !important;
+  font-size: medium !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+#nav-btn {
+  font-size: 15px;
+}
+
+.service-card ul {
+  list-style-type: square;
+}
+
+.logo {
+  width: 15%;
+}
+
+.dbs-class h5 {
+  font-size: 15px;
+  color: #363636;
+}
+
+/* Navbar  */
+.dropdownbox {
+  width: 60vw !important;
+}
+/* Custom Scroll Bar */
+/*
+ *  STYLE 1
+ */
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 4.2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+/* Marquee Box */
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.marquee-box {
+  display: inline-block;
+  padding-left: 100%;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+.marquee-box:hover {
+  animation-play-state: paused;
+}
+/* Display image Section */
+.display-image {
+  height: 500px;
+  width: 100vw !important;
+}
+/* Digital banking services */
+.minicards {
+  border: 0px solid #00836c;
+  border-radius: 10px;
+  color: #00836c;
+  width: 128px;
+  height: 160px;
+  transition: 0.3s;
+}
+.minicards:hover {
+  box-shadow: 0 0.5rem 1rem rgba(143, 143, 143, 0.664) !important;
+  transform: translateY(-3px);
+  cursor: pointer;
+  /* box-shadow: 0px 1px rgb(255, 255, 255) !important; */
+}
+/* Other links section */
+.link-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 0;
+  padding: 0 10px;
+  height: 200px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.link-card:hover {
+  /* transform: translateY(-4px);
+  box-shadow: 0px 3px #cacaca; */
+  box-shadow: 0 0.5rem 1rem rgba(75, 75, 75, 0.664) !important;
+}

@@ -1,0 +1,64 @@
+/*********************** Internet explore css start  ************************/
+
+
+.IE .navbar-brand .logo{
+	width: 100%;
+}
+.IE .left-menu  a.left-menu-a:before{
+	margin-right:25px;
+}
+
+.IE .quick-links-card {
+	background: url("../assets/images/girl-with-lap.svg") no-repeat, #4fa9a7;
+	background-position: 0% 115%;
+	background-size: 100%;
+	color: #fff;
+}
+
+.IE .headline-title::after {   
+    top: 20px;
+}
+.IE .top-header .nav-item.active{
+	background: #e5f2f0;
+}
+.IE .servies-card{
+	margin: 5px 5px;
+}
+.IE .servies-card:hover span{
+	color: #fff;
+}
+.IE footer .footer-links a{
+	color: #fff;
+}
+.IE .primary-header{
+	box-shadow: 0px 5px 10px #615c5c;
+}
+
+.IE .sticky-nav {
+    box-shadow: -3px 0px 7px #615c5c;
+} 
+
+.IE section.home-loan-overview.suv-feat-hindi .home-loan-overview-list
+{
+height:100px;
+-ms-flex-pack: center;
+}
+
+.IE .home-loan-overview .home-loan-overview-list 
+{
+height:100px;
+-ms-flex-pack: center;
+}
+
+
+.IE .branch-atm-main .left-menu  a.left-menu-a:before{
+	margin-right:25px;
+}
+  .IE .analyst-pg .box-with-radius.height-equal.bg-yellow.d-flex {
+      display: block !important;
+   }
+   .IE .investors-page .statue-grid.w-100.d-flex,.IE .investors-page .box-with-radius.bg-yellow.d-flex {
+      display: block !important;
+   }
+
+/*********************** Internet explore css end  ************************/

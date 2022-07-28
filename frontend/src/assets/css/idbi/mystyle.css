@@ -1,0 +1,29 @@
+/* Navbar */
+.navbar-button {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.navbar-button:hover {
+  color: #00836c !important;
+}
+.minicards {
+  border: 0px solid #00836c;
+  border-radius: 10px;
+  color: #00836c;
+  width: 113px;
+  height: 140px;
+}
+
+.link-card {
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 0;
+  padding: 0 10px;
+  height: 200px;
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

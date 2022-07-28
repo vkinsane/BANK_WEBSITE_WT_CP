@@ -1,0 +1,5191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap");
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+.sb-inner {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.horizontal-scroll {
+	display: none;
+}
+
+ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "";
+	background: url(../assets/images/icons/breadcrumb-arrow.svg) no-repeat;
+	height: 5px;
+	width: 5px;
+	position: relative;
+	top: 12px;
+	left: 6px;
+}
+
+.breadcrum-sec {
+	background: #f9f9f9;
+	padding: 13px 0;
+}
+
+ul.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 3px;
+	padding: 0;
+}
+
+ul.breadcrumb li a {
+	color: #666666;
+}
+
+ul.breadcrumb li {
+	color: #000000;
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.breadcrum-sec h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 0;
+}
+
+.left-menu ul {
+	padding: 0;
+}
+
+
+.left-menu ul li {
+	list-style-type: none;
+	padding: 6px 15px 6px 40px;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+
+.left-menu ul li:hover a {
+	/* background: #f9f9f9; */
+	color: var(--dark-green);
+}
+
+.left-menu ul li:first-child {
+	background: #4fa9a7;
+	color: #fff;
+	font-size: 16px;
+	padding: 14px 15px;
+	margin-bottom: 7px;
+}
+
+.left-menu ul li:first-child:before {
+	display: none;
+}
+
+.left-menu ul li a {
+	display: block;
+}
+
+ul.left-scroll-menu {
+	border: 1px solid #efefef;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 0 0 6px 0;
+}
+
+ul.left-scroll-menu li:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 5px solid #4fa9a7;
+	position: absolute;
+	left: 25px;
+	margin-top: 6px;
+}
+
+.about-main {
+	margin-top: 30px;
+}
+
+
+a.left-menu-a:before {
+	content: "";
+ border: solid #00836c;
+	border-width: 0 1.5px 1.5px 0;
+	display: inline-block;
+	padding: 2px;
+	transform: rotate(-45deg);
+	margin-right: 10px;
+	position: absolute;
+	right: 11px;
+	margin-top: 9px;
+
+
+}
+
+a.left-menu-a {
+	display: block;
+	color: #00836c;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 500;
+	border: 1px solid rgba(0, 131, 108, 0.2);
+	border-radius: 4px;
+	padding: 9px 12px;
+	margin-bottom: 10px;
+	text-decoration: none;
+		    padding-right: 25px;
+}
+
+a.left-menu-a:hover {
+	background: #E5F2F0 !important;
+}
+
+a.left-menu-a.active {
+	background: #00836C;
+	border: 1px solid #00836C;
+	border-radius: 4px;
+	opacity: 1;
+	color: #FFFFFF;
+}
+
+section.about-us-top {
+	background: #f9f9f9;
+	border-radius: 8px;
+	/* margin-bottom: 50px; */
+}
+
+.about-us-banner {
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+}
+
+.about-us-banner img {
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+}
+
+.about-us-banner h2 {
+	color: #000;
+	font-size: 34px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.about-us-banner h6 {
+	color: #444444;
+	line-height: 23px;
+	font-size: 17px;
+	font-family: Calibri, arial;
+}
+
+.aboutus-banner-cont {
+	/* width: 46%; */
+	transform: translate(30px, 45%);
+}
+
+.about-banner-bottom {
+	padding: 15px 0;
+		background-color: #f9f9f9;
+}
+
+.about-banner-bottom ul {
+	list-style-type: none;
+	padding: 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0;
+
+
+}
+
+span.about-ban-svg {
+	display: block;
+	margin-bottom: 7px;
+}
+
+span.about-ban-svg svg {
+	width: 32px;
+	height: 32px;
+}
+
+span.about-ban-svg svg .a {
+	fill: #00836c;
+	stroke-width: 0px;
+}
+
+.about-banner-bottom ul li {
+	background: #fff;
+	text-align: center;
+	padding: 17px 5px;
+	width: calc(100% / 6);
+	margin: 0 5px;
+	border-radius: 8px;
+}
+
+span.svg-det {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	display: inline-flex;
+}
+
+.vision {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+	color: #fff;
+}
+
+.vision img {
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	max-height: 100%;
+	bottom: 0;
+	width: 100%;
+	object-position: bottom;
+	height: 100%;
+}
+
+.vision-cont {
+	padding: 30px;
+}
+
+.vision h5.medium-h5 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.mission-grid-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mission h5 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.mission-grid {
+	width: calc(100% / 2 - 10px);
+	border: 1px solid #efefef;
+	border-radius: 8px;
+	display: flex;
+	padding: 10px 15px;
+	margin: 0 10px 10px 0;
+	min-height: 120px;
+}
+
+.mission-grid:last-child {
+	margin-bottom: 0;
+}
+
+/*.mission-grid:nth-last-child(2){}*/
+.mission-grid p {
+	font-size: 16px;
+	margin-bottom: 0;
+	font-family: Calibri, arial;
+	color: #666666;
+}
+
+.mission-svg svg .a {
+	stroke-width: 0;
+}
+
+span.mission-svg {
+	margin-right: 10px;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+
+
+.company-profile-cont {
+	background: #f9f9f9;
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.company-content p {
+	    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+	color: #444444;
+	margin-bottom: 10px;
+	/* line-height: 26px; */
+}
+
+.company-profile-count {
+	display: flex;
+}
+
+.comp-prof-grid {
+	border: 1px solid #efefef;
+	border-radius: 8px;
+	width: calc(100% / 4);
+	padding: 30px 20px;
+	margin-right: 15px;
+}
+
+.comp-prof-grid:last-child {
+	margin-right: 0;
+}
+
+.comp-prof-grid h4 {
+	color: #00836c;
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.comp-prof-grid h5 {
+	color: #999999;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.comp-prof-grid h6 {
+	color: #444444;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+section.our-journey {
+	border-radius: 8px;
+	background: #f9f9f9;
+	padding: 30px;
+}
+
+.journey-slider-top h3 {
+	border: 1px solid #efefef;
+	color: #666666;
+	border-radius: 4px;
+	font-size: 18px;
+	padding: 8px 25px;
+	width: 95px;
+	margin: 0 auto;
+	   position: relative;
+    background-color: #fff;
+}
+
+.journey-slider-top .slick-list.draggable::before {
+    content: '';
+    position: absolute;
+    width: 83%;
+    border-bottom: 2px dotted #EFEFEF;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    left: 50%;
+}
+
+.journey-slider-top {
+	background: #fff;
+	padding: 15px;
+	margin-bottom: 25px;
+	border-radius: 8px;
+	position: relative;
+}
+
+.journey-slider-top:before {
+    content: '';
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.journey-slider-top.slick-dotted.slick-slider:before {
+	content: "";
+	background: #fff;
+	width: 65px;
+	height: 69px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	top: 0;
+}
+
+.journey-slider-top.slick-dotted.slick-slider:after {
+	content: "";
+	background: #fff;
+	width: 65px;
+	height: 69px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	top: 0;
+}
+
+.journey-slider-top .slick-current h3,
+.journey-slider-top .slick-slide:hover h3 {
+	border: 1px solid #00836c;
+	color: #00836c;
+	transition: 0.3s Linear All;
+}
+
+.bottom-slide-div {
+	display: flex !important;
+}
+
+.journey-slider-img {
+	width: 40%;
+	overflow: hidden;
+	height: 333px;
+	border-radius: 8px;
+	max-width: 420px;
+}
+
+.journey-slider-img img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.journey-slider-content {
+	width: 60%;
+	padding-left: 30px;
+}
+
+.journey-slider-content h2 {
+	font-size: 50px;
+	color: rgb(0 0 0 / 10%);
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.journey-slider-content h6 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.journey-slider-content p {
+	font-family: Calibri, arial;
+	font-size: 16px;
+	color: #666666;
+}
+
+.journey-slider-bottom {
+	margin-top: -10px;
+}
+
+.journey-slider-top .slick-slide {
+	cursor: pointer;
+}
+
+.journey-slider-top ul.slick-dots {
+	position: absolute;
+	padding: 0;
+	text-align: center;
+	top: 54px;
+	z-index: 2;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.journey-slider-top li.slick-active:before {
+	height: 22px;
+	width: 22px;
+	box-shadow: 0px 5px 10px #00000029;
+	border-radius: 50%;
+	position: absolute;
+	content: " ";
+	background: #fff;
+	top: 0px;
+	margin-left: -10px;
+}
+
+.journey-slider-top .slick-dots li.slick-active:before {
+	height: 20px;
+	width: 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	position: absolute;
+	content: " ";
+	background: #fff;
+	top: -7px;
+	left: 3px;
+}
+
+.journey-slider-top .slick-dots button {
+	display: none;
+}
+
+.journey-slider-top .slick-dots li {
+	position: absolute;
+	background: #00836c;
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	transform: translate(-30px, 15px);
+}
+
+.board-of-direct,
+.executive-director {
+	position: relative;
+}
+
+button.slick-arrow.slick-disabled {
+	border: 1px solid rgba(102, 102, 102, 0.35) !important;
+}
+
+.journey-slider-top .slick-list {
+	padding: 0px 45px;
+	    padding-bottom: 40px;
+
+}
+
+.journey-slider-top.slick-slider .slick-arrow,
+.executive-director .slick-slider .slick-arrow,
+.board-of-direct .slick-slider .slick-arrow {
+	/* color: red; */
+	text-align: center;
+	background: #fff;
+	right: 0;
+	left: auto;
+	border: 1px solid #999999;
+	border-radius: 100%;
+	height: 30px;
+	width: 30px;
+}
+
+.board-of-direct .slick-slider .slick-arrow:hover {
+	border: 1px solid var(--dark-green);
+}
+
+.executive-director .slick-slider .slick-arrow,
+.board-of-direct .slick-slider .slick-arrow {
+	right: 20px;
+}
+
+.journey-slider-top.slick-slider .slick-arrow {
+	z-index: 2;
+	top: 35px;
+	position: absolute;
+}
+
+.journey-slider-top.slick-slider .slick-arrow.slick-prev {
+	left: 15px;
+}
+
+.journey-slider-top.slick-slider .slick-arrow.slick-next {
+	right: 15px;
+}
+
+.board-of-direct .slick-slider .slick-arrow.slick-prev,
+.executive-director .slick-slider .slick-arrow.slick-prev {
+	right: 60px;
+}
+
+
+/* .executive-director  .slick-prev.slick-arrow:hover {
+	background: var(--dark-green) !important;
+} */
+
+.journey-slider-top .slick-prev:before,
+.executive-director .slick-prev:before,
+.board-of-direct .slick-prev:before {
+	content: "";
+	border: solid #999999;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(135deg);
+	margin-right: -4px;
+}
+
+.journey-slider-top .slick-next:before,
+.executive-director .slick-next:before,
+.board-of-direct .slick-next:before {
+	content: "";
+	border: solid #999999;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(315deg);
+	margin-right: 4px;
+}
+
+.director-card {
+	background: #f9f9f9;
+	margin-right: 20px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.journey-slider-top .slick-slider .slick-arrow,
+.board-of-direct .slick-slider .slick-arrow,
+.executive-director .slick-slider .slick-arrow {
+	top: -30px;
+}
+
+.director-card h5 {
+	color: #00836c;
+    font-size: 15px;
+    margin-bottom: 0px;
+    min-height: 36px;
+}
+
+.director-card h6 {
+	color: #444444;
+	font-size: 12px;
+	font-family: Calibri, arial;
+}
+
+.card-cont {
+	padding: 15px 10px;
+}
+
+.green-a {
+	font-size: 12px;
+	color: #00836c;
+	font-weight: 500;
+}
+.white-a {
+	font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.green-a:hover,
+.statue-grid a.download.green:hover {
+	color: #307360;
+}
+
+a.view-all {
+	min-width: 125px;
+	height: 40px;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+}
+
+a.download-all,
+.big-org {
+	padding: 9px 30px;
+}
+
+.board-direct-bottom .green-a,
+.executive-bottom .green-a {
+	margin-right: 15px;
+}
+
+.board-direct-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+
+/* .director-card:nth-child(4n+1){
+margin-right: 0;
+} */
+
+.svg-a svg {
+	margin-right: 10px;
+}
+
+.statues-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.green {
+	color: #00836c;
+}
+
+.statue-box {
+	display: flex;
+	justify-content: space-between;
+}
+.signature-debit-card .statues .mb-20 {
+         margin-bottom: 20px;
+      }
+      .offer-para{
+         height: 50px;
+      }
+      .offer-title{
+      height: 55px;
+      }
+      .credit-card-offers .card-body span {
+    margin: 22px 0;
+      }
+      .credit-card-pg-hindi .type-of-cards .home-loan-overview-list img{
+   width: 100%;
+   box-shadow: 1px 11px 13px -2px rgb(0 0 0 / 32%);
+   -webkit-box-shadow: 1px 11px 13px -2px rgb(0 0 0 / 32%);
+   -moz-box-shadow: 1px 11px 13px -2px rgba(0,0,0,0.32);
+   margin-bottom: 30px;
+ }
+
+
+ .credit-card-pg-hindi .home-loan-overview.type-of-cards .btn-orange {
+    width: 115px;
+    margin-right: 10px;
+}
+.credit-card-pg-hindi .credit-card-offers .card-body span{
+   display: block;
+   font-style: italic;
+   margin: 10px 0;
+}
+.credit-card-pg-hindi .credit-card-offers .btn-orange{
+   margin-top: 50px;
+}
+.credit-card-pg-hindi .home-loan-eligibility.credit-card-offers .card .card-title {
+    font-size: 16px;
+ }
+ .credit-card-pg-hindi .card-table th {
+    width: 50%;
+}
+ .credit-card-pg-hindi .documents{
+      height: 40px;
+   }
+.statue-grid {
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    width: calc(100% / 3 - 15px);
+    margin: 0 20px 20px 0;
+    padding: 30px 25px;
+    position: relative;
+}
+.statue-grid a.download.green{
+	position: absolute;
+	bottom: 20px;
+}
+.investors-page #Presentations .statue-grid a.download.green{
+	position: inherit;
+}
+
+
+.statue-grid:nth-child(3n + 3){
+	/* background: red; */
+	margin-right: 0;
+}
+
+.statue-grid:last-child {
+	margin-right: 0;
+}
+
+span.statue-svg {
+	margin-bottom: 20px;
+	display: block;
+}
+
+.statue-grid h6 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+a.download.green {
+	font-size: 15px;
+	font-weight: 500;
+	/* margin-right: 4px; */
+}
+
+.statue-grid a.download svg {
+	margin-left: 5px;
+	vertical-align: baseline;
+}
+
+.financial-reports {
+	background: #4fa9a7;
+	position: relative;
+	padding: 25px;
+	border-radius: 8px;
+}
+
+.financial-reports-head .medium-h5 {
+	color: #fff;
+	margin-bottom: 0;
+	padding-top: 5px;
+}
+
+.financial-reports-head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+
+/* dropdown code start */
+
+.idbi-dd {
+	background: #fff;
+	/* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); */
+	cursor: pointer;
+	/* margin: 0 auto; */
+	max-width: 225px;
+	padding: 6px 20px;
+	position: relative;
+	width: 75%;
+	height: 35px;
+	border-radius: 4px;
+	display: flex;
+    align-items: center;
+}
+
+.idbi-dd .drop {
+	background: #fff;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	left: 0;
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 2;
+}
+
+.idbi-dd .drop li a {
+	color: #695d52;
+	display: block;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+.idbi-dd span {
+	color: #666666;
+	font: 14px;
+}
+
+.idbi-dd .drop li:hover a {
+	background-color: #4fa9a7;
+	color: #ffffff;
+}
+
+.idbi-dd.active::after {
+	border-width: 0 8px 8px;
+}
+
+.idbi-dd.active .drop {
+	display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-3px);
+    max-height: 250px;
+    overflow: auto;
+}
+
+
+/* dropdown code end */
+
+.financial-reports-grid {
+	color: #fff;
+	width: calc(100% / 3);
+	background: rgba(255, 255, 255, 0.1);
+	margin: 10px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.financial-reports-grid:first-child {
+	margin-left: 0;
+}
+
+.financial-reports-grid:last-child {
+	margin-right: 0;
+}
+
+.financial-reports-grid label {
+	background: #3f8786;
+	display: flex;
+	padding: 10px 15px;
+	min-height: 70px;
+	font-weight: 500;
+	align-items: center;
+	width: 100%;
+}
+
+.financial-reports-main {
+	display: flex;
+}
+
+.financial-reports-grid ul {
+	padding: 20px 25px;
+	margin-bottom: 0;
+}
+
+.financial-reports-grid ul li {
+	font-size: 14px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.financial-reports-grid ul li svg {
+	width: 15px;
+	height: 15px;
+}
+
+.financial-reports-bottom {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.classification-accord {
+	position: relative;
+	border: 1px solid #efefef;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+}
+
+span.ct-left {
+	width: calc(100% - 40px);
+}
+
+.classification-accord .card-header.collapsed svg {
+	transform: rotate(180deg);
+	transition: 0.3s all Linear;
+}
+
+.classification-accord .card-header.collapsed {
+	border-bottom: 0;
+}
+
+.classification-accord .card-header.collapsed .card-title {
+	margin: 0;
+	width: 100%;
+}
+
+.classification-accord .card-header,
+.classification-accord .card-body {
+	background: #fff;
+	padding: 0;
+}
+
+.classification-accord .card-body {
+	font-size: 16px;
+	margin-top: 13px;
+	color: #666666;
+}
+
+.classification-accord .card-body p {
+	margin-bottom: 5px;
+	font-family: Calibri, arial;
+}
+
+.classification-accord .card-header svg {
+	transform: none;
+	transition: 0.3s all Linear;
+}
+
+.classification-accord .card-title {
+	margin-bottom: 0.75rem;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+}
+
+.classification-accord span.accord-svg-head {
+	background: rgb(247 247 247);
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+  position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.classification-accord span.accord-svg-head svg {
+	width: 12px;
+	height: 12px;
+}
+
+.coc-banner {
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+	color: #fff;
+}
+
+.coc-banner img {
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+}
+
+.coc-banner-cont {
+	width: 54%;
+	transform: translate(0, -50%);
+	margin-right: 0;
+	position: relative;
+	left: 46%;
+	top: 50%;
+	padding: 0 20px 0 0;
+}
+
+.coc-banner-cont h2 {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	line-height: 45px;
+}
+
+.coc-banner-cont h6 {
+	margin-bottom: 15px;
+}
+
+.media-corner {
+	/* background: #4FA9A7; */
+	position: relative;
+	/* padding: 25px; */
+	border-radius: 8px;
+}
+
+.media-corner-head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.media-corner-head .idbi-dd {
+	border: 1px solid #efefef;
+}
+
+.statue-grid .a {
+	/* fill: #00836c; */
+	fill: #00afbe;
+	stroke-width: 0px;
+}
+
+.media-corner-grid {
+	background: #f9f9f9;
+}
+
+.media-corner-grid h6 {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-family: Calibri, arial;
+}
+
+.media-corner-grid p {
+	font-size: 14px;
+	color: #444444;
+	margin-bottom: 30px;
+	min-height: 135px;
+	line-height: 26px;
+	font-weight: 500;
+}
+
+.media-corner-grid {
+	background: #f9f9f9;
+	padding: 25px 25px;
+	border-radius: 8px;
+}
+
+.media-corner-grid.mc-sm {
+	margin-bottom: 20px;
+	min-height: 240px;
+}
+
+.media-corner-grid a.download.green {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.media-corner-grid a.download.green:hover {
+	color: #307360;
+}
+
+.media-corner-grid a.download svg {
+	margin-left: 5px;
+	vertical-align: initial;
+}
+
+.media-corner-grid .btn.btn-orange-outline {
+	border-radius: 3px;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 6px 10px;
+	margin-right: 20px;
+}
+
+.mc-grid-bottom {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+
+.mc-grid-bottom .a {
+	fill: #00836c;
+	stroke-width: 0px;
+}
+
+.media-corner-grid.mc-lg {
+	padding: 0;
+	overflow: hidden;
+}
+
+.director-card.slick-slide img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	/*height: 190px;*/
+}
+
+.financial-reports-grid .a {
+	fill: #fff;
+}
+
+.media-corner-grid.mc-lg img {
+	height: 200px;
+	object-fit: cover;
+	width: 100%;
+	object-position: center;
+}
+
+.mc-lg-container p {
+	margin-bottom: 25px;
+	/* min-height: 232px; */
+	font-size: 14px;
+}
+
+.mc-lg-container {
+	padding: 25px 25px;
+}
+
+.media-corner-container .col-md-4 {
+	padding: 0 10px;
+}
+
+.idbi-desktop {
+	display: block;
+}
+
+.idbi-mobile {
+	display: none;
+}
+
+.journey-slider-top.slick-slider .slick-arrow:hover,
+.executive-director .slick-slider .slick-arrow:hover,
+.board-of-direct .slick-slider .slick-arrow:hover {
+	/* background-color: var(--dark-green); */
+}
+
+.journey-slider-top.slick-slider .slick-arrow:hover:before,
+.executive-director .slick-slider .slick-arrow:hover:before,
+.board-of-direct .slick-slider .slick-arrow:hover:before {
+	border: solid var(--dark-green);
+	border-width: 0 2px 2px 0;
+}
+
+.slick-arrow.slick-disabled:hover {
+	background-color: #fff !important;
+}
+
+.journey-slider-top.slick-slider .slick-arrow.slick-disabled:hover:before,
+.executive-director.slick-slider .slick-arrow.slick-disabled:hover:before,
+.board-of-direct.slick-slider .slick-arrow.slick-disabled:hover:before {
+	border: solid var(--dark-green);
+	opacity: 0.25;
+	border-width: 0 2px 2px 0;
+}
+
+
+/* homeloan junaid code */
+
+.coc-banner.how-to-apply-banner {
+	color: #000;
+}
+
+.how-to-apply-banner .coc-banner-cont h2 {
+	font-size: 25px;
+	line-height: 35px;
+	margin: 0 0 10px 0;
+}
+
+.how-to-apply-banner .coc-banner-cont h6 {
+	margin-bottom: 40px;
+	font-family: Calibri, arial;
+	font-size: 18px;
+	line-height: 24px;
+	color: #666666;
+}
+
+.hta-head {
+	flex-wrap: wrap;
+}
+
+.statues-head.hta-head p {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.statue-box.hta-box .b {
+	fill: #ffaa0a;
+	stroke-width: 0px;
+}
+
+.statue-box.hta-box svg.submit-doc-svg .b {
+	fill: #00afbe;
+}
+
+svg.submit-doc-svg .a {
+	fill: #ffaa0a;
+}
+
+.board-direct-bottom.hta-bottom {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.board-direct-bottom a.btn.btn-orange.git {
+	margin-right: 20px;
+}
+
+/* new replica pages start 6-may*/
+.banner-btn.btn-group a {
+  margin-right: 10px;
+  border: none;
+}
+.btn-green:hover {
+    background-color: #307360;
+    color: #fff;
+
+}
+.ssa-banner-bottom p{
+  font-size: 18px;
+  color: #787878;
+}
+p{
+  font-family: calibri, sans-serif;
+  margin-bottom: 0;
+}
+.about-us-top.ssa-top{
+  background: transparent;
+}
+.ssa-banner h2 {
+    margin-bottom: 30px;
+}
+.financial-reports-grid.ssa-features-grid{
+  width: calc(100% / 4);
+}
+.financial-reports-grid.ssa-features-grid ul li{
+  border-bottom: none;
+  flex-wrap: wrap;
+}
+.financial-reports-grid.ssa-features-grid ul li small{
+  display: block;
+}
+.how-to-apply.ssa-hta .statue-grid p{
+  min-height: 44px;
+}
+/* .homeloan-faq.ssa-faq{
+  padding: 0;
+} */
+.ssa-avvantages .link-card figcaption{
+  min-height: 40px;
+}
+
+/* media-release start */
+
+.about-banner-bottom.ssa-banner-bottom {
+    padding: 0;
+}
+
+/* homeloan junaid code end */
+
+/* branch and atm start */
+.hidden{
+	display: none !important;
+}
+section.branch-atm-count .comp-prof-grid{
+	width: calc(100% / 3);
+}
+section.locate-us {
+    background-color: #F9F9F9;
+    padding: 30px;
+}
+.mr-20{
+	margin-right: 20px;
+}
+.tab-content-top {
+    display: flex;
+    align-items: center;
+		margin-bottom: 30px;
+}
+.tab-content-top .idbi-dd{
+	height: 45px;
+}
+.locate-us-grid {
+    background-color: #fff;
+    border: 1px solid #EFEFEF;
+    width: calc(100% / 3);
+    margin: 0 15px 0 0;
+    padding: 20px;
+		border-radius: 8px;
+}
+.tab-content-body {
+    display: flex;
+}
+.locate-us-grid h5 {
+    font-size: 16px;
+    font-weight: 500;
+		margin-bottom: 15px;
+	}
+	.locate-us-grid h6 {
+    font-family: Calibri, arial;
+    font-weight: 600;
+		color: #444444;
+		margin-bottom: 5px;
+}
+.locate-us-grid h6 small{
+	color: #999999;
+	font-weight: 600;
+}
+.lug-bottom ul {
+    padding: 0;
+    list-style-type: none;
+}
+.lug-bottom ul li {
+    display: flex;
+		margin-bottom: 10px;
+}
+.lug-bottom ul li p.tel-no{
+	font-weight: 600;
+}
+.lug-bottom ul li p{
+    display: flex;
+    flex-wrap: wrap;
+		color: #444444;
+		font-size: 16px;
+		line-height: 22px;
+}
+.lug-bottom ul li p small {
+    width: 100%;
+    color: #999999;
+    font-family: Calibri, arial;
+    font-size: 14px;
+    margin-bottom: -3px;
+}
+.lug-bottom span.lug-svg {
+    background-color: #F9F9F9;
+    min-width: 35px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+		margin-right: 12px;
+}
+.lug-bottom span.lug-svg svg{
+	width: 14px;
+	height: 14px;
+}
+.lug-bottom {
+    margin-top: 20px;
+}
+/* branch and atm end */
+
+/* secretarial disclosure start*/
+.gcoc .coc-banner img{
+	z-index: 0;
+}
+.gcoc .coc-banner-cont {
+    width: 54%;
+    transform: translate(0, -50%);
+    margin-right: 0;
+    position: relative;
+    left: 40px;
+    top: 50%;
+    padding: 0 20px 0 0;
+}
+a.white-a{
+	color: #fff;
+}
+a.svg-a.white-a .a {
+	fill: #fff;
+}
+.banner-cta-wrap {
+    display: flex;
+}
+.head-rt {
+    display: flex;
+}
+.head-rt .idbi-dd{
+	min-width: 200px;
+}
+.dur .dur-bottom, .adv-bottom{
+	margin-top: 20px;
+}
+.secretarial-disclosure-pg .medium-h5{
+	margin-bottom: 5px;
+}
+.secretarial-disclosure-pg .media-corner-grid {
+    background: #f9f9f9;
+    padding: 25px 25px;
+    border-radius: 8px;
+    width: calc(100% / 3 - 14px);
+    margin: 0 20px 20px 0;
+}
+.secretarial-disclosure-pg .media-corner-grid:nth-child(3n + 3){
+	margin-right: 0;
+}
+.secretarial-disclosure-pg .media-corner-grid p{
+	font-size: 16px;
+	min-height: 80px;
+}
+.media-release-pg .inner-banner{
+	margin-bottom: 0;
+}
+/* secretarial disclosure end*/
+
+p.terms{
+	margin: 0 !important;
+}
+ .platinum-payroll-hindi-pg p.terms{
+	margin-top: 20px !important;
+}
+.signature-debit-card .signature-page-link{
+	word-break: break-all;
+}
+
+  .credit-card a.left-menu-a:before
+  {
+          border: solid #fff;
+    border-width: 0 1.5px 1.5px 0;
+  }
+
+  .credit-card .credit-card-offers .card-body span {
+    font-size: 10px;
+}
+
+
+/* .credit-card  .how-to-apply .statue-grid h6 {
+ 
+    min-height: 60px;
+}
+*/
+ .credit-card .home-loan-eligibility .card-body {
+ 
+    height: 250px;
+}
+
+.left-menu-bottom a.left-menu-a.active:before {
+    border: solid #fff;
+    border-width: 0 1.5px 1.5px 0;
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1030px) and (orientation:portrait) {
+	.about-banner-bottom ul {
+		flex-wrap: wrap;
+	}
+	.about-banner-bottom ul li {
+		width: calc(100% / 3 - 15px);
+		margin: 7px 5px;
+	}
+	.mission-grid {
+		width: 100%;
+		margin: 6px 0px;
+	}
+	.mission-grid:last-child,
+	.mission-grid:nth-last-child(2) {
+		margin-bottom: 6px;
+	}
+	.comp-prof-grid {
+		margin-right: 0;
+		width: calc(100% / 2 - 20px);
+		margin: 10px;
+	}
+	.company-profile-count {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.financial-reports-main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.financial-reports-grid {
+		/* width: calc(100% / 2); */
+		width: calc(100% / 2 - 20px);
+	}
+	.financial-reports-grid:first-child,
+	.financial-reports-grid:last-child {
+		margin: 10px;
+	}
+	.coc-banner-cont h2 br {
+		display: none;
+	}
+	.media-corner-bottom.text-center a {
+		display: inline-flex;
+	}
+	ul.left-scroll-menu {
+		background: #fff;
+		border-radius: 0;
+		border: 0;
+	}
+	.left-menu ul li:first-child:before {
+		content: "";
+		border: solid #ffffff;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: translateX(92vw) rotate( 45deg);
+		margin-right: 4px;
+		position: absolute;
+		right: 0px;
+		transition: 0.3s all linear;
+	}
+	.left-menu ul li.open-fixed-slide:before {
+		transform: translateX(92vw) rotate( 225deg);
+		transition: 0.3s all linear;
+	}
+	.financial-reports {
+		background: #4fa9a7;
+		position: relative;
+		padding: 25px 20px;
+		border-radius: 8px;
+	}
+	.financial-reports-head {
+		padding: 0 15px;
+	}
+  .financial-reports-grid.ssa-features-grid {
+    width: calc(100% / 3 - 20px);
+  }
+
+  .super-saving-acount-pg .financial-reports-grid.ssa-features-grid{
+	      height: 195px;
+
+  }
+  .statue-grid{
+    margin-right: 15px;
+  }
+  .breadcrum-sec:before{
+    content: none;
+  }
+  .breadcrum-container{
+    padding: 0;
+  }
+  .breadcrum-sec{
+    padding: 15px 20px;
+  }
+  .about-main {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-device-width:991px) and (max-device-width:1130px) and (orientation:landscape) {}
+
+@media (max-width:767px) {
+  .ssa-banner-cont br{
+    display: none;
+  }
+  .ssa-banner.about-us-banner h2{
+    font-size: 26px;
+  }
+  a.download-all, .big-org {
+    padding: 9px 20px;
+  }
+  .container-fluid.custom-container.breadcrum-container{
+    padding: 0;
+  }
+	.about-banner-bottom ul {
+		flex-wrap: wrap;
+	}
+	.about-banner-bottom ul li {
+		width: calc(100% / 2 - 10px);
+		margin: 5px 5px;
+		border-radius: 8px;
+	}
+	.mission-grid {
+		width: 100%;
+	}
+	.company-profile-cont .company-content p {
+		font-size: 14px;
+	}
+	.company-profile-count {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.comp-prof-grid {
+		width: 100%;
+		padding: 50px 20px 20px;
+		margin: 0 0 10px 0;
+	}
+	.comp-prof-grid h4 {
+		margin-bottom: 0;
+	}
+	.comp-prof-grid h6 {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.journey-slider-top .slick-list:after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		/* background: #e0e0e0; */
+		position: absolute;
+		left: 0;
+		top: 50%;
+		z-index: -1;
+	}
+	.journey-slider-top .slick-current h3 {
+		background-color: #fff;
+	}
+	.journey-slider-top.slick-dotted.slick-slider:after,
+	.journey-slider-top.slick-dotted.slick-slider:before {
+		height: 35px;
+		width: 35px;
+	}
+	.idbi-desktop {
+		display: none;
+	}
+	.idbi-mobile {
+		display: block;
+	}
+	.vision-cont {
+		padding: 30px 15px 30px 40%;
+		transform: translate(0, -45%);
+		margin-right: 0;
+		position: relative;
+		/* left: 35%; */
+		top: 50%;
+	}
+	.vision-cont {
+		font-size: 14px;
+	}
+	.bottom-slide-div {
+		display: flex !important;
+		flex-wrap: wrap;
+	}
+	.journey-slider-img {
+		height: 250px;
+		width: 100%;
+	}
+	.journey-slider-content {
+		width: 100%;
+		padding: 20px 0 10px;
+	}
+	section.our-journey {
+		border-radius: 8px;
+		background: #f9f9f9;
+		padding: 30px 25px 0px;
+	}
+	.journey-slider-content h6 {
+		font-size: 17px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		line-height: 26px;
+	}
+	.journey-slider-content {
+		font-size: 14px;
+	}
+	.slider.board-of-direct-slider .slick-list,
+	.slider.executive-director-slider .slick-list {
+		padding: 0 30% 0 0 !important;
+		padding-right: 30%;
+	}
+	.board-direct-bottom {
+		flex-wrap: wrap;
+	}
+	.board-direct-bottom .btn-orange {
+		margin-bottom: 20px;
+	}
+	.statues-head {
+		flex-wrap: wrap;
+	}
+	h5.medium-h5 {
+		font-size: 23px;
+	}
+	.statue-box {
+		overflow-x: auto;
+		max-width: 100%;
+	}
+	.sb-inner {
+		width: 950px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: unset;
+		padding-bottom: 10px;
+	}
+	.statue-grid, .statue-grid:nth-child(3n + 3){
+		width: calc(100% / 3 - 15px);
+		min-width: 290px;
+		max-width: 290px;
+		margin: 0 15px 0 0;
+	}
+	.about-us-pg .statue-box {
+    margin-bottom: 100px;
+	}
+
+	/* .statues-head a.btn.btn-orange {
+		position: absolute;
+		bottom: -30px;
+	} */
+	.about-us-pg .statues-head a.btn.btn-orange {
+    position: absolute;
+    bottom: -25px;
+	}
+	section.statues {
+		position: relative;
+	}
+	.horizontal-scroll .mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+		background-color: #444;
+		height: 3px;
+		margin: 0;
+	}
+	.horizontal-scroll .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail,
+	.horizontal-scroll .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		height: 3px;
+		margin: 0;
+		background: transparent;
+	}
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+		bottom: 15px;
+	}
+	.statue-box.horizontal-scroll {
+		margin-bottom: 80px;
+	}
+	.financial-reports-head .medium-h5 {
+		color: #fff;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.financial-reports-head {
+		flex-wrap: wrap;
+	}
+	.idbi-dd {
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.financial-reports-main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.financial-reports-grid {
+		width: 100%;
+	}
+	.financial-reports-grid:first-child,
+	.financial-reports-grid {
+		margin: 10px 0 0 0;
+	}
+	span.ct-left {
+		width: calc(100% - 40px);
+	}
+	.breadcrum-sec:before {
+		content: none;
+	}
+	.classification-accord .card-title {
+		font-size: 15px;
+	}
+	.classification-accord .card-body p {
+		font-size: 14px;
+	}
+	.coc-banner-cont h6 {
+		font-size: 15px;
+		margin: 0 0 10px 0;
+	}
+	.coc-banner-cont h2 {
+		font-size: 23px;
+		font-weight: 600;
+		margin-bottom: 30px;
+		line-height: 30px;
+	}
+	.coc-banner {
+		height: 100%;
+	}
+	.media-corner-grid p {
+		font-weight: 500;
+	}
+	.mc-grid-bottom {
+		width: calc(100% - 25%);
+	}
+	.media-corner-grid.mc-sm {
+		margin-bottom: 10px;
+	}
+	.media-corner-grid.mc-sm:last-child {
+		/* margin-bottom: 30px; */
+	}
+	.media-corner-grid {
+		margin: 10px 0;
+	}
+	.aboutus-banner-cont {
+		transform: none;
+		position: relative;
+		text-align: center;
+		padding: 20px 15px;
+	}
+	.about-us-banner h2 {
+		font-size: 30px;
+	}
+	.about-us-banner h6 br {
+		display: none;
+	}
+	.about-main {
+		margin-top: 0;
+	}
+	.vision {
+		height: 191px;
+		margin-bottom: 40px;
+	}
+	.mission-grid {
+		margin: 0 0 10px 0;
+	}
+	.coc-banner-cont {
+		width: 100%;
+		transform: none;
+		margin-right: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: left;
+		padding: 35px 25px;
+	}
+	.financial-reports {
+		padding: 25px 20px;
+	}
+	.media-corner-head .idbi-dd {
+		margin-bottom: 5px;
+	}
+	.executive-director .slick-slider .slick-arrow,
+	.board-of-direct .slick-slider .slick-arrow {
+		right: 0px;
+	}
+	.board-of-direct .slick-slider .slick-arrow.slick-prev,
+	.executive-director .slick-slider .slick-arrow.slick-prev {
+		right: 47px;
+	}
+	.left-menu ul li:first-child {
+		padding: 11px 15px;
+	}
+	.left-menu ul li:first-child:before {
+		content: "";
+		border: solid #ffffff;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: translateX(85vw) rotate( 45deg);
+		margin-right: 4px;
+		position: absolute;
+		right: 0px;
+		transition: 0.3s all linear;
+	}
+	.left-menu ul li.open-fixed-slide:before {
+		transform: translateX(85vw) rotate( 225deg);
+		transition: 0.3s all linear;
+	}
+	ul.left-scroll-menu {
+		background: #fff;
+		border-radius: 0;
+		border: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+	}
+  p.terms {
+    margin: 5px 0 10px;
+  }
+	.idbi-dd {
+		margin-bottom: 0;
+	}
+	.idbi-dd:after {
+		content: "";
+		border: solid #8c8c8c;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 3px;
+		/* transform: translateX(-3vw) rotate( 45deg); */
+		margin-right: 4px;
+		position: absolute;
+		right: 0px;
+		top: 15px;
+		transition: 0.3s all linear;
+	}
+	.idbi-dd.active:after {
+		transform: translateX(-3vw) rotate( 225deg);
+		border-width: 0 2px 2px 0;
+		top: 20px;
+	}
+  .financial-reports-grid.ssa-features-grid{
+    width: 100%;
+  }
+  .ssa-features .financial-reports-head .medium-h5{
+    margin-bottom: 0;
+  }
+  .ssa-hta .hta-head .inner-title{
+    margin-bottom: 10px;
+  }
+  .financial-reports-grid.ssa-features-grid ul li small {
+    display: block;
+    width: 100%;
+  }
+  .breadcrum-sec {
+    padding: 10px 15px;
+  }
+  .breadcrum-sec::after{
+    content: none;
+  }
+	section.branch-atm-count .comp-prof-grid {
+    width: 100%;
+	}
+	section.branch-atm-count {
+	    margin-top: 30px;
+	}
+	.tab-content-top{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.tab-content-top .idbi-dd.mr-20{
+		margin-bottom: 13px;
+		margin-right: 0;
+	}
+	.locate-us-grid{
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+	.tab-content-body{
+		flex-wrap: wrap;
+	}
+	section.locate-us{
+		padding: 20px;
+	}
+	.gcoc .coc-banner-cont{
+		width: 100%;
+transform: none;
+margin-right: 0;
+position: absolute;
+left: 0;
+top: 0;
+padding: 20px;
+	}
+	.banner-cta-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-cta-wrap a.btn.btn-orange.big-org.mr-20{
+	margin-bottom: 15px;
+}
+.head-rt {
+    display: flex;
+    flex-wrap: wrap;
+}
+.idbi-dd.mr-20 {
+    margin-right: auto;
+}
+.head-rt .idbi-dd{
+	margin-bottom: 15px;
+}
+.secretarial-disclosure-pg .medium-h5 {
+    margin-bottom: 20px;
+}
+.statue-box.horizontal-scroll {
+    margin-bottom: 0;
+}
+.secretarial-disclosure-pg .media-corner-grid {
+    background: #f9f9f9;
+    padding: 25px 25px;
+    border-radius: 8px;
+    width: calc(100% / 3 - 14px);
+    margin: 0 15px 0 0;
+    min-width: 300px;
+}
+.secretarial-disclosure-pg .media-corner-grid:nth-child(3n + 3){
+		margin: 0 15px 0 0;
+}
+.mc-grid-bottom {
+    width: 100%;
+}
+.secretarial-disclosure-pg .statues-head a.btn.btn-orange{
+	position: static;
+}
+.breadcrum-sec::after{
+	content: none !important;
+}
+.nav-tabs-main {
+    overflow-x: auto;
+    max-width: 100%;
+		padding: 0 0 10px 0;
+}
+.nav-tabs-main::-webkit-scrollbar-track {
+    background: transparent;
+}
+.nav-tabs-main::-webkit-scrollbar-thumb {
+    background: rgb(232 232 232);
+    border-radius: 10px;
+}
+.nav-tabs-style-1 .nav-tabs .nav-link{
+		padding: 15px 30px 10px;
+}
+.nav-tabs-main .nav-tabs {
+    width: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+.chat-box{
+	max-height: 490px;
+}
+.home-loan-facility.ssa-avvantages .link-card{
+	align-items: center;
+}
+.statue-grid.hta-grid{
+	min-width: 100%;
+}
+.media-release .media-corner-bottom {
+    margin-top: 20px;
+}
+.sales-tax-pg .calculator-model {
+    padding: 5px 15px;
+}
+.sales-tax-pg .nav-tabs-main .nav-tabs{
+	  width: 620px;
+}
+.sales-tax-pg .nav-tabs-main{
+	margin-top: -30px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .credit-card .home-loan-eligibility .card-body {
+    
+    height: auto;
+}
+.mb-sm-20
+{
+	margin-bottom: 20px;
+}
+
+}
+
+
+@media only screen and (max-width: 320px){
+	h5.medium-h5 {
+	    font-size: 20px;
+	}
+
+	.board-of-direct span {
+	    width: 30px;
+	    height: 30px;
+	    float: left;
+	}
+	.board-direct-bottom .green-a, .executive-bottom .green-a {
+	    margin-right: 0;
+	}
+	.coc-banner-cont h2 {
+	    font-size: 18px;
+	    margin-bottom: 10px;
+	    line-height: 20px;
+	}
+
+}
+
+/* section {
+    padding: 50px 0;
+} */
+.bg-light-blue {
+
+}
+.inner-title {
+    color: #000000;
+    text-align: left;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.green-text {
+    color: #00836C;
+}
+.left-menu.desktop {
+    display: block;
+}
+.left-menu.mobile {
+    display: none;
+}
+
+.border-radius-8px {
+    border-radius: 8px;
+}
+/* .left-menu {
+    position: fixed;
+    width: 270px;
+} */
+
+
+.left-menu ul li a {
+    color: #666666;
+}
+
+a.left-menu-a.active {
+    background: #00836C;
+    border: 1px solid #00836C;
+    border-radius: 4px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+a.left-menu-a:hover {
+    background-color: #307360;
+    color: #307360;
+}
+/* a.left-menu-a.active:before {
+    border: solid #FFFFFF;
+    border-width: 0 1.5px 1.5px 0;
+    padding: 3px;
+} */
+
+.para {
+    font-size: 16px;
+    font-family: Calibri, arial;
+    color: #666666;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+}
+
+.home-loan-overview .btn-orange {
+
+    font-weight: 600;
+    font-size: 14px;
+    /* align-items: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; */
+}
+
+.home-loan-overview .home-loan-banner {
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+
+.desktop-img {
+    display: block;
+}
+.mobile-img {
+    display: none;
+}
+
+.home-loan-overview .home-banner-caption {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    padding: 0 40px;
+}
+
+.home-loan-overview .home-banner-caption h1 {
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: -0.7px;
+    color: #000000;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.home-loan-overview .home-banner-caption .green-text {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #00836C;
+    opacity: 1;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    background: url(../assets/images/icons/right-arrow-green.svg) no-repeat;
+    display: inline-block;
+    background-position: 100% 65%;
+    background-size: 6px;
+    transition: 0.3s all linear;
+    padding: 0 15px 0 0;
+}
+
+.home-loan-overview .home-banner-caption .btn-group {
+    margin: 15px 0;
+}
+
+.home-loan-overview .home-banner-caption a.btn {
+    width: 180px;
+    font-size: 13px;
+    border-radius: 3px !important;
+    font-weight: 600;
+    height: 40px;
+}
+.home-loan-overview .home-banner-caption a.btn:hover {
+    /* background-color: #307360; */
+    color: #fff;
+}
+
+.home-loan-overview .home-banner-caption a.btn:first-child {
+    margin-right: 10px;
+    border: none;
+}
+.home-loan-overview .home-banner-caption a.btn:first-child:hover {
+    background-color: #307360;
+}
+.table-structure {
+    table-layout: fixed;
+}
+.table-structure table th:first-child {
+    width: 40%;
+}
+.table-structure table th:last-child {
+    width: 60%;
+}
+.table-structure table td {
+    border: 1px solid #EFEFEF;
+}
+.table-structure table td {
+    font-size: 14px;
+    color: #000000;
+    line-height: 18px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+.table-structure table th {
+    text-align: left;
+    letter-spacing: -0.36px;
+    color: #000000 !important;
+    opacity: 1;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+.cardFees p {
+    margin-bottom: 30px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+.font-bold {
+    font-weight: 600;
+}
+
+/* .home-loan-overview .overview-list {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.home-loan-overview .home-loan-overview-list {
+    background: #F9F9F9;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    padding: 0 15px;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    min-height: 90px;
+    margin: 0 0 30px 0;
+}
+.home-loan-overview .home-loan-overview-list svg {
+    width: 39px !important;
+    height: 41px !important;
+}
+
+.home-loan-overview .home-loan-overview-list p {
+    text-align: left;
+    letter-spacing: -0.36px;
+    color: #000000;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 0 0 15px;
+    font-family: Calibri, arial;
+}
+
+.home-loan-overview .overview-special-offers {
+    background: #4FA9A7;
+    padding: 20px 30px;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.home-loan-overview .overview-special-offers .special-offers {
+    width: 70%;
+}
+
+.home-loan-overview .overview-special-offers img {
+    width: 20%;
+}
+
+.home-loan-overview .overview-special-offers span {
+    font-size: 12px;
+    letter-spacing: -0.24px;
+    font-weight: 600;
+}
+
+.home-loan-overview .special-offers-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home-loan-overview .special-offers h4 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.home-loan-overview .special-offers .offers-tnc {
+    text-align: left;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* .home-loan-facility,
+.home-loan-advantage,
+.home-loan-eligibility,
+.board-of-direct,
+.home-loan-features,
+.homeloan-payment,
+.how-to-apply,
+.how-to-apply-banner,
+.homeloan-faq {
+    padding: 30px 0 0;
+} */
+
+.home-loan-facility .board-of-direct-slider {}
+
+.home-loan-facility .link-card {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    opacity: 1;
+    margin: 0;
+}
+
+.home-loan-facility .link-card figcaption {
+    font-size: 16px;
+    font-family: Calibri, arial;
+    color: #000000;
+    line-height: 20px;
+}
+
+.home-loan-facility .link-card {
+    display: flex !important;
+}
+.home-loan-facility .link-card figure {
+    cursor: default;
+}
+
+.home-loan-facility .link-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* .home-loan-facility .link-card:nth-child(4) {
+    margin-right: 0px;
+} */
+.home-loan-facility .link-card img {
+    margin: 0 auto;
+}
+
+.home-loan-features .home-loan-takeover.loan-takeover-bg {
+    background: #FFAA0A;
+   /*  height: 259px; */
+}
+
+
+
+.home-loan-features .home-loan-takeover.loan-maximum-bg {
+    background: #4FA9A7;
+    margin: 30px 0 0 0;
+    /* height: 211px; */
+}
+
+.home-loan-features .home-loan-takeover.loan-maxloan-bg {
+    background: #00AFBE;
+    /* height: 500px; */
+}
+
+.home-loan-features .home-loan-takeover {
+    color: #fff;
+    padding: 20px 25px;
+}
+
+.home-loan-features .home-loan-takeover p {
+    text-align: left;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.home-loan-features .home-loan-takeover span {
+    text-align: left;
+    letter-spacing: -0.14px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px 0 0 0;
+    display: block;
+    font-family: Calibri, arial;
+}
+
+.home-loan-features .home-loan-takeover li {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+    color: #FFFFFF;
+    opacity: 1;
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 10px 0 0px 0;
+    font-family: Calibri, arial;
+}
+
+.home-loan-features .home-loan-takeover li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: url('../assets/images/icons/tick-white.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.home-loan-features .home-loan-takeover li span {
+    margin: 0;
+    display: initial;
+    color: #fff;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.home-loan-features .home-loan-takeover .max-loan-amount {
+    border: 1px solid rgba(239, 239, 239, 0.3);
+    padding: 15px;
+    margin-top: 14px;
+}
+
+.home-loan-features .home-loan-takeover .max-loan-amount p.max-loan-amount-title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0;
+}
+
+.home-loan-features .home-loan-takeover .max-loan-amount p.max-loan-amount-para {
+    text-align: left;
+    letter-spacing: -0.16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Calibri, arial;
+    font-weight: normal;
+}
+
+
+.homeloan-faq a.btn.btn-orange {
+    width: 150px;
+    margin: 15px 0 0 0;
+}
+
+.home-loan-advantage .advantage-list li {
+    text-align: left;
+    letter-spacing: -0.18px;
+    color: #666666;
+    opacity: 1;
+    font-size: 17px;
+    line-height: 22px;
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 15px 0;
+    font-family: Calibri, arial;
+}
+
+.home-loan-advantage .advantage-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: url(../assets/images/icons/tick-green.svg) no-repeat;
+    width: 17px;
+    height: 17px;
+    background-size: 100%;
+}
+
+.home-loan-eligibility {}
+
+.home-loan-eligibility .card {
+    border-radius: 1px;
+    border: none;
+}
+
+.home-loan-eligibility .card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.home-loan-eligibility .card-body {
+    background: #F9F9F9;
+    border-radius: 0 0 8px 8px;
+}
+
+.home-loan-eligibility .card .card-title {
+    text-align: left;
+    letter-spacing: -0.36px;
+    color: #444444;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.home-loan-eligibility .card-body li {
+    text-align: left;
+    letter-spacing: -0.16px;
+    color: #808080;
+    opacity: 1;
+    font-size: 16px;
+    position: relative;
+    padding: 0 0 0 28px;
+    margin: 0 0 7px 0;
+    font-family: Calibri, arial;
+}
+
+.home-loan-eligibility .card-body li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: url('../assets/images/icons/tick-grey.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.home-loan-eligibility .card-body li span {
+    text-align: left;
+    letter-spacing: -0.16px;
+    color: #808080;
+    opacity: 1;
+    font-size: 16px;
+    position: relative;
+    padding: 0;
+    margin: 0 0 7px 0;
+    font-family: Calibri, arial;
+    font-weight: 600;
+}
+
+.home-loan-eligibility .overview-special-offers {
+    padding: 20px 30px;
+    color: #FFFFFF;
+    position: relative;
+    background: url('../assets/images/home-loan/home-loan-help-banner.png') no-repeat;
+    height: 300px;
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+.home-loan-eligibility .special-offers {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    transform: translateY(-50%);
+}
+
+.home-loan-eligibility .special-offers-title {
+    text-align: left;
+    letter-spacing: -0.36px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 35px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.home-loan-eligibility .special-offers h4 {
+    text-align: left;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.home-loan-eligibility .special-offers a {
+    font-size: 14px;
+    width: 210px;
+    margin: 20px 0 0 0;
+}
+
+.documentation {
+    background: #F9F9F9;
+    margin: 30px 0 0 0;
+    padding: 25px 30px;
+}
+.documentation .documentaion-section {
+    background: #FFFFFF;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 20px;
+    margin: 0px 0 30px 0;
+    min-height: 111px;
+}
+
+.documentation .documentaion-section h5 {
+    text-align: left;
+    letter-spacing: -0.32px;
+    color: #444444;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.documentation .documentaion-section p {
+    text-align: left;
+    letter-spacing: -0.16px;
+    color: #808080;
+    opacity: 1;
+    font-size: 14px;
+    margin: 0;
+    line-height: 22px;
+    font-family: Calibri, arial;
+}
+
+.documentation .disclaimer {
+    text-align: left;
+    letter-spacing: -0.14px;
+    color: #444444;
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 0;
+    font-family: Calibri, arial;
+}
+
+.idbi-dd {
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    position: relative;
+}
+
+.idbi-dd::after {
+    content: '';
+    background: url(../assets/images/icons/down-arrow-grey.svg) no-repeat;
+    width: 11px;
+    height: 7px;
+    position: absolute;
+    right: 1rem;
+
+    border: transparent;
+    transition: 0.3s all Linear;
+}
+.idbi-dd.active::after {
+    transform: rotate(
+180deg
+);
+    transition: 0.3s all Linear;
+}
+.idbi-dd span {
+    font-size: 12px;
+    font-weight: 600;
+        display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.documentation .green-a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.documentation .green-a:hover,
+.home-loan-overview .home-banner-caption .green-text:hover {
+    color: #307360;
+}
+
+.documentation .green-a span {
+    margin: 0 10px 0 0;
+}
+
+.how-to-apply p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.how-to-apply .statue-grid h6 {
+    line-height: initial;
+    margin: 0 0 10px 0;
+    min-height: auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.how-to-apply .statue-grid p {
+    color: #808080;
+    font-size: 16px;
+    font-family: Calibri, arial;
+    line-height: 22px;
+}
+.text-blue {
+    color: #20B9C6 !important;
+    font-weight: bold;
+    font-family: Calibri, arial;
+}
+.contact-us .statue-grid {
+    margin-bottom: 20px;
+}
+
+.how-to-apply .statues-head.hta-head p {
+    font-size: 18px;
+    font-family: Calibri, arial;
+}
+
+.how-to-apply .board-direct-bottom.hta-bottom {
+    margin: 30px 0;
+}
+
+.how-to-apply .board-direct-bottom .btn.btn-orange.view-all.git {
+    width: 164px;
+}
+
+.how-to-apply .svg-a.green-a {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #00836C;
+    opacity: 1;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    background: url(../assets/images/icons/right-arrow-green.svg) no-repeat;
+    display: inline-block;
+    background-position: 100% 65%;
+    background-size: 5px;
+    transition: 0.3s all linear;
+    padding: 0 13px 0 0;
+}
+
+
+
+/**popup start**/
+.tab-pane {
+    padding: 25px 0;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-header h5{
+    font-weight: 600;
+}
+.calculator-model{
+    padding: 5px 35px;
+}
+.calculator-model .nav-tabs{
+    border-bottom: 1px #ccc solid;
+}
+.calculator-model .nav-tabs .nav-link{
+    border:none;
+    font-size: 14px;
+    text-align: left;
+    flex: inherit;
+    padding: 5px 0px;
+    margin-right: 30px;
+    color: #444444;
+    opacity: 0.7;
+    font-weight: 600;
+}
+.calculator-model .nav-tabs .nav-link.active, .calculator-model .nav-tabs .nav-link:hover{
+    border-bottom: 4px #00836C solid;
+    opacity: 1;
+}
+
+.calculator-model label {
+    font-size: 12px;
+    color: #666666;
+    text-align: left;
+}
+.calculator-model .form-control {
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    background: #fff;
+}
+.calculator-model .form-check-label, .calculator-model .terms {
+    font-size: 14px;
+}
+.calculator-model .terms a{
+    color: #00836C;
+}
+button.submit{
+    padding: 8px 20px;
+}
+.form-check {
+    margin-top: 10px;
+}
+.type-of-employment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+        margin: 10px 0;
+}
+.type-of-employment p {margin-bottom: 0;font-size: 12px;margin-right: 10px;}
+
+.type-of-employment span {
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    margin: 0 5px;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.close {
+    color: #444444;
+    opacity: 0.5;
+}
+.close:hover{
+    color: #444444;
+    opacity: 0.5 !important;
+}
+.close span {
+    font-size: 40px;
+    font-weight: normal;
+    opacity: 1;
+}
+p.terms {
+    margin-bottom: 30px;
+}
+.date span{
+    position: absolute;
+    right: 18px;
+    z-index: 9999;
+    top: 6px;
+}
+
+
+.input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after, .input-group:not(.has-validation)>.custom-select:not(:last-child), .input-group:not(.has-validation)>.form-control:not(:last-child){
+    border-radius: 4px;
+}
+.modal-content{
+    border: none;
+}
+/**popup End**/
+
+.how-to-apply .board-direct-bottom.hta-bottom.mr-b-50{
+    margin-bottom: 50px;
+}
+p.terms {
+    margin-top: 20px;
+    color: #444444;
+    opacity: 0.7;
+}
+ .apply-online .quick-links-card {
+      background-image: none;
+  }
+  .apply-online .list-group {
+   display: block;
+  }
+  .apply-online .list-group-links a {
+   width: 32.34%;
+   margin: 0 0 12px 5px;
+  }
+   .how-to-apply.download-forms .svg-a.green-a{
+     background-image: none;
+     position: absolute;
+     bottom: 20px;
+      }
+   .download-forms .statue-box {
+      display: block;
+     }
+  .download-forms .statue-grid {
+         margin-left: 27px;
+         float: left;
+         height: 252px;
+         width: 31.2%;
+         margin-right: 0;
+         position: relative;
+             margin-bottom: 20px;
+     }
+     .download-forms .statue-grid:nth-child(1), .download-forms .statue-grid:nth-child(4), .download-forms .statue-grid:nth-child(7) {
+       margin-left: 0;
+     }
+    
+    .customer-services .statue-grid {
+        width: calc(100% / 2);
+    }
+    .customer-services .digital-banking {
+        background-color: transparent;
+        padding: 0;
+        position: relative;
+    }
+    .customer-services .servies-cards {
+        margin: 0;
+        background: #F9F9F9;
+        padding: 20px;
+    }
+
+ 
+    .customer-services .we-offer-title {
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: -0.32px;
+        color: #000000;
+        opacity: 1;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .customer-services .we-offer-para {
+        text-align: left;
+        letter-spacing: 0px;
+        color: #787878;
+        opacity: 1;
+        font-family: Calibri, arial;
+        line-height: 24px;
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+    .customer-services .servies-card:hover img {
+        filter: brightness(0) invert(1)!important;
+    }
+    .customer-education .classification-accord .card-body p.accordion-para {
+        color: #787878;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 20px 0;
+    }
+    .accordion-title {
+        font-family: calibri,sans-serif;
+        color: #000000;
+    }
+    .customer-education .rights-section {
+        background: #F9F9F9;
+        padding: 25px 30px 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .customer-education .rights-section li {
+        background: #FFFFFF;
+        border-radius: 8px;
+        opacity: 1;
+        width: 31%;
+        margin: 0 0 30px 0;
+        padding: 20px;
+        display: flex;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #00836C;
+        opacity: 1;
+    }
+    .customer-education .rights-section li p {
+        padding: 0 0 0 15px;
+    }
+    .customer-care-service {
+
+        background-size: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .customer-care-service .cusomer-care-service-section {
+        width: 50%;
+        padding: 30px 20px 0 0;
+    }
+    .customer-care-service .cusomer-care-service-section h5 {
+        margin: 0 0 10px 0;
+    }
+    .customer-care-service .cusomer-care-service-section p {
+        color: #666666;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 15px 0;
+    }
+    .customer-care-service .cusomer-care-service-section li {
+        position: relative;
+        padding: 0 0 0 15px;
+    }
+    .customer-care-service .cusomer-care-service-section li:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 5px solid #4fa9a7;
+        position: absolute;
+        left: 0;
+        margin-top: 6px;
+    }
+    .customer-care-service .cusomer-care-service-section li a {
+        color: #000000;
+        text-align: left;
+        letter-spacing: -0.32px;
+        color: #000000;
+        opacity: 1;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .customer-care .man-with-lap {
+        position: absolute;
+        left: 0;
+        width: 35%;
+        height: 100%;
+        top: 0;
+    }
+    .customer-care .customer-phone-banking .man-with-lap {
+        right: 0;
+        left: auto;
+    }
+    .customer-care .customer-locateus .man-with-lap {
+        width: 50%;
+        right: 0;
+        left: auto;
+    }
+    .customer-care .customer-locateus .man-with-lap img {
+        width: auto;
+    }
+    .customer-care .man-with-lap img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        object-position: top;
+    }
+    .customer-care .servies-card {
+        width: 121px;
+    }
+    .customer-care .servies-card span {
+        font-size: 13px;
+    }
+    .customer-care .home-loan-takeover span {
+        margin: 0px 10px 0 0;
+    }
+
+    /* start 404 css */
+    .img_logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:8%;
+       }
+       .abc img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:2%;
+       }
+       .text p{
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:2%;
+        text-align: center;
+        font-size: 21px;
+          font-weight: 600;
+       }
+       .btn_fir {
+         text-align: center;
+
+       }
+    /* end 404 css */
+    .pay-online-pg .how-to-apply .statue-grid p.pay-now-color-para{
+        color: #00AFBE;
+    font-size: 16px;
+    font-family: Calibri, arial;
+    line-height: 22px;
+    margin: 10px 0;
+      }
+      .pay-online-pg .pay-online-para-div{
+             height: 46%;
+      }
+     .pay-online-pg ul.pay-bill-ul li:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid #4fa9a7;
+    position: absolute;
+      margin-left: -18px;
+    margin-top: 6px;
+ }
+ .pay-online-pg ul.pay-bill-ul{
+   padding-left: 0;
+ }
+ .pay-online-pg ul.pay-bill-ul li{
+  list-style-type: none;
+    padding: 3px 15px 3px 40px;
+    font-size: 14px;
+    color: #444444;
+ opacity: 1;
+    cursor: pointer;
+   padding-left: 20px;
+ }
+ .pay-online-pg .pay-online-para-div p{
+    color: #444444;
+ opacity: 1;
+ }
+ .pay-online-pg .btn-white{
+       background-color: #fff;
+    border: 1px solid #e16733;
+    color: #e16733;
+   width: 134px;
+ }
+ .pay-online-pg  .statue-grid{
+    padding: 30px 25px 65px 25px;
+ }
+  .pay-online-pg.faq-landing-pg  .statue-grid{
+    padding: 30px 25px 10px 25px;
+ }
+ .pay-online-pg.faq-landing-pg  ul.pay-bill-ul li{
+ 	    font-weight: 500;
+ }
+
+    .pay-online-pg  .pay-online-para-div span{
+          color: #00AFBE;
+    font-size: 12px;
+    margin-left: 4px;
+     }
+     .digital-banking.customer-locateus {
+        padding: 30px 0;
+     }
+     .digital-banking.customer-locateus .calculator-model .nav-tabs {
+        flex-wrap: initial;
+        justify-content: space-between;
+     }
+     .digital-banking.customer-locateus .calculator-model .nav-tabs .nav-link {
+        margin: 0;
+     }
+     .digital-banking.customer-locateus .calculator-model .nav-tabs .nav-link.active,
+     .digital-banking.customer-locateus .calculator-model .nav-tabs .nav-link:hover {
+        background: transparent;
+     }
+     .select-state .idbi-dd,
+     .select-district .idbi-dd {
+        border: 1px solid #EFEFEF;
+        border-radius: 3px;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    .select-state {
+        position: relative;
+        z-index: 2;
+    }
+    .select-district {
+        margin: 15px 0;
+    }
+    .enhance-customer .svg-a.green-a {
+        margin: 15px 0;
+        display: flex;
+
+    }
+    .enhance-customer .coc-banner .svg-a.green-a span {
+        padding: 0 25px 0 0;
+    }
+    .enhance-customer .coc-banner .svg-a.green-a img {
+        width: 18px;
+        height: auto;
+    }
+
+    .payment-on ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+     }
+
+     .payment-on ul li {
+        width: 18%;
+        margin: 8px;
+     }
+
+     .link-card {
+        margin: 0;
+     }
+
+   .type-of-cards .home-loan-overview-list {
+    display: block;
+    padding: 15px;
+}
+.type-of-cards .home-loan-overview-list img{
+ width: 100%;
+ box-shadow: 1px 11px 13px -2px rgb(0 0 0 / 32%);
+ -webkit-box-shadow: 1px 11px 13px -2px rgb(0 0 0 / 32%);
+ -moz-box-shadow: 1px 11px 13px -2px rgba(0,0,0,0.32);
+ margin-bottom: 30px;
+}
+.home-loan-overview.type-of-cards .btn-orange {
+  width: 115px;
+  margin-right: 10px;
+}
+.credit-card-offers .card-body span{
+ display: block;
+ font-style: italic;
+ margin: 10px 0;
+}
+.credit-card-offers .btn-orange{
+ margin-top: 50px;
+}
+.home-loan-eligibility.credit-card-offers .card .card-title {
+  font-size: 16px;
+}
+.card-table th {
+  width: 50%;
+}
+.documents{
+    height: 40px;
+ }
+ .deposit-calculator .nav-tabs .nav-item.show .nav-link, .deposit-calculator .nav-tabs .nav-link.active {
+    border: 1px #00836C solid;
+    border-radius: 4px;
+    color: #00836C;
+}
+.deposit-calculator .nav-tabs {
+    border-bottom: none;
+}
+.deposit-calculator .nav-item {
+    border: 1px #EFEFEF solid;
+    border-radius: 4px;
+    color: #000000;
+    margin: 0 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.deposit-calculator .btn-group .btn{
+   margin-right: 15px;
+}
+.deposit-calculator .svg-a.green-a{
+   padding: 10px;
+   background: #00836c;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 500;
+   margin-right: 20px;
+   border-radius: 4px;
+}
+.deposit-calculator .btn-group{
+   margin-bottom: 35px;
+}
+.deposit-calculator .form-group input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 14px;
+}
+
+.deposit-calculator .form-group input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 14px;
+}
+
+.deposit-calculator .form-group input::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 14px;
+}    .table.forex-table th{
+    background: #EFEFEF;
+  }
+  .table.forex-table td {
+    border: 1px #EFEFEF solid;
+    text-align: left;
+ }
+ .forex-table thead tr th {
+    padding: 5px 5px;
+    border: 1px #e4e4e4 solid;
+    font-size: 14px;
+ }
+ .service-charges .statue-grid{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+
+ .home-loan-advantage .advantage-list .advantage-idbi li {
+    padding: 0;
+ }
+ .home-loan-advantage .advantage-list .advantage-idbi li::before {
+    background: none;
+}
+.environmental-services p a{
+ color: #00836c;
+}
+.indus-expert-list {
+    flex-wrap: wrap;
+}
+.indus-expert-list li {
+    color: #666666;
+    font-size: 16px;
+    font-family: Calibri, arial;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+}
+
+/*karishma Css start*/
+
+nav.primary-header li.mega-dropdown.list-inline-item.active {
+    background-color: #00725e;
+    padding: 12px 5px;
+}
+
+.calculator-model sub {
+    color: red;
+}
+
+.mb-10
+{
+margin-bottom: 20px;
+}
+
+main.education-loan section.home-loan-overview a {
+   
+    /* font-size: 16px; */
+    font-family: Calibri, arial;
+}
+
+td.tg-0lax.align-middle {
+font-weight: 600 !important;
+}
+td.tg-0lax.align-middle {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+#tax-saving .table-border-light tr.grey-bg th {
+    background: #f5f5f5 !important;
+}
+ .nre-account-pg .para.black{
+      color: #000;
+      }
+      .nre-account-pg .home-loan-overview-list{
+       min-height: 130px;  
+      }
+      .nre-account-pg .feature-para{
+      font-size: 17px;
+      font-family: Calibri, arial;
+      color: #666666;
+      line-height: 22px;
+      margin: 0 0 20px 0;
+      }
+      .nre-account-pg .link-card{
+      padding: 0 12px;
+      height: 270px;
+      }
+      .nre-account-pg .home-loan-features .home-loan-takeover span.nre-fixed-deposit{
+         opacity: 1;
+         font-size: 16px;
+      }
+      .nre-account-pg .home-loan-features .home-loan-takeover.loan-maximum-bg{
+             margin: 0px 0 0 0;
+      }
+     .nre-account-pg .home-loan-features .home-loan-takeover {
+       height: 570px;
+       max-height: 570px;
+      }
+     section.suvidha-overview a {
+    font-size: 15px;
+    color: #00836c;
+}
+section.home-loan-overview.suv-feat-hindi .home-loan-overview-list
+{
+    min-height: 190px;
+}
+
+/*customer-care page css start*/
+
+.product-support-k .loan-card.card .card-body a.white-a {
+    color: #00836C;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.product-support-k .loan-card.card .card-body a.white-a span {
+    padding-right: 10px;
+}
+.pd-bt-0
+{
+	padding-bottom: 0 !important;
+}
+main.customer-care section.PhoneBankingNumbers p.para.text-white {
+    min-height: 45px;
+}
+
+main.customer-care .list-group-flush>.list-group-item:last-child {
+    border-bottom-width: 1px;
+}
+main.customer-care .inner-title {
+    font-size: 18px;
+}
+
+main.customer-care .mt-50
+{
+	margin-top: 50px;
+}
+main.customer-care .enhance-customer .svg-a.green-a {
+background: none;
+}
+
+main.customer-care  .contact-list-1 li .text-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+main.customer-care  .contact-list-1 li i.bi.bi-envelope {
+    color: #00836C;
+}
+
+.write-wrap.loan-card a.btn-link {
+    color: #00836C;
+    font-size: 14px;
+}
+
+.write-wrap span.contact-info {
+    display: inline-block;
+    margin-left: 50px;
+}
+ main.customer-care  .home-loan-features .home-loan-takeover.loan-maximum-bg a,  
+ main.customer-care .home-loan-takeover.loan-takeover-bg a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+ main.customer-care  .classification-accord .card-body p {
+    margin-bottom: 20px;
+    font-family: Calibri, arial;
+}
+
+ main.customer-care .coc-banner-cont {
+    left: 48%;
+}
+.list-group-style-1 .list-group-item
+{
+	border-bottom:1px solid #ffffff3d;
+}
+.IE section#PhoneBankingNumbers .list-group-style-1 .list-group-item
+{
+	border-bottom:1px solid #d4d4d4;
+}
+.IE  .customer-care .man-with-lap img
+{
+	height:auto;
+}
+
+.IE  .customer-care  .coc-banner img
+{
+height:auto;	
+}
+
+.IE  .customer-care  .coc-banner-cont 
+{
+transform: translate(0px, -75%);
+}
+
+/*customer-care page css end*/
+
+.pt-10
+{
+padding-top: 10px !important;
+}
+
+a.svg-a.green-a.no-arrow {
+    background: none;
+}
+.IE  .finanacial-reports-main section#phone-banking-number .box-with-radius.height-equal.bg-yellow.d-flex.align-items-start.flex-column {
+    display: block !important;
+}
+
+.IE .list-group-style-1 .list-group-item
+{
+	border-bottom:1px solid #d4d4d4;
+}
+
+.IE .list-group-flush > :last-child.list-group-item
+
+{
+	border-width:0px;
+}
+
+p.we-offer-title.mon-font
+{
+font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    font-family: "Montserrat", sans-serif;	
+}
+.pt--30
+{
+	padding-top: 30px;
+}
+p.we-offer-title.mon-font a.we-offer-title {
+    font-size: 18px;
+    font-weight: normal;
+}
+.pt--5{
+	padding-top: 5px;
+}
+
+.mt--0
+{
+	margin-top: 0px !important;
+}
+a.tel-f-14
+{
+	font-size: 14px !important;
+	color: #444444;
+}
+.font-s-35{
+	font-size: 35px;
+}
+.font-16
+{
+	font-size: 16px;
+}
+.font-12
+{
+	color: #444444;
+	font-size: 12px !important;
+}
+
+.pt--20
+{
+	padding-top: 20px;
+}
+
+.border-bt-div
+{
+border: 0;
+border-bottom: 1px solid #dee2e6;
+
+}
+.phone-banking-pg .servies-card {
+    width: 18%;
+    }
+
+main.bond-holders section#FlexiBonds .statue-grid .down-bond a.download.green
+{
+	position: initial;
+}
+ul.list-inline.down-bond li {
+    display: inline;
+}
+
+.mr-left-20
+{
+	margin-left: 20px;
+}
+
+main.bond-holders h1.inner-title.font--18 {
+    font-size: 18px !important;
+}
+.mc-grid-bottom.mt-20 {
+    margin-top: 20px;
+}
+.IE main.bond-holders section#FlexiBonds .statue-grid.d-flex
+{
+	display:block !important;
+}
+.IE main.investors-page .Presentations .statue-grid.d-flex
+{
+	display:block !important;
+}
+      .grievance-pg .home-loan-overview ul{
+         list-style: none;
+      }
+      .grievance-pg .home-loan-overview ul li {
+         font-size: 17px;
+    font-family: Calibri, arial;
+    color: #666666;
+    line-height: 22px;
+    margin: 4px 0 8px 0px;
+      }
+      .grievance-pg .home-loan-advantage a,.grievance-pg .calculator-model .nav-tabs .nav-link {
+         width: 80px;
+         text-align: center;
+         background: transparent;
+ }
+  .grievance-pg .home-loan-advantage .escalation-div .advantage-list li.download-complaint-form::before {
+    background: url(assets/images/icons/complaint.svg) no-repeat;
+
+    width: 18px;
+    height: 22px;
+
+ }
+
+
+ .grievance-pg .home-loan-advantage .escalation-div .advantage-list li.download-complaint-form {
+    color: #00836c;
+    font-weight: 600;
+ }
+     
+.grievance-pg .escalation-div .level1-accord{
+    margin: 0 0 30px 0;
+   
+}
+.grievance-pg .home-loan-advantage .escalation-div .advantage-list li::before{
+    top: 2px;
+}
+.grievance-pg .escalation-div .tab-pane {
+    padding: 25px 0 0px 0;
+}
+.grievance-pg .escalation-div .we-offer-para {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #787878;
+    opacity: 1;
+    font-family: Calibri, arial;
+    line-height: 24px;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+.grievance-pg .escalation-div .we-offer-title {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    color: #000000;
+    opacity: 1;
+    font-size: 18px;
+    margin: 25px 0;
+}
+ .grievance-pg .home-loan-advantage .escalation-div .advantage-list li{
+       margin: 0 0 10px 0;
+}
+.grievance-pg .escalation-div .level-name {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    color: #000000;
+    opacity: 1;
+    font-size: 18px;
+}
+.grievance-pg .escalation-div .level-place {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    color: #000000;
+    opacity: 1;
+    font-size: 25px;
+}
+.grievance-pg .escalation-div .level-para {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #787878;
+    opacity: 1;
+    font-family: Calibri, arial;
+    line-height: 24px;
+    font-size: 18px;
+    margin: 0 0 0px 0;
+}
+.grievance-pg .calculator-model {
+    padding: 0;
+}
+.investors-page .inner-banner-caption{
+	width: 52%;
+}
+/*karishma Css end*/
+
+
+
+/* start media queries */
+
+@media only screen and (max-width: 1280px) {
+	 .analyst-pg  .svg-a.green-a {
+       display: inline;
+       }
+       .analyst-pg .view-svg {
+       margin-left: -4px;
+      }
+      .phone-banking-pg .nav-tabs-style-1 .nav-tabs .nav-link{
+      	padding: 15px 16px;
+    	margin-right: 7px;
+      }
+     
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 991px) {
+    .home-loan-overview .home-banner-caption {
+        width: 50%;
+    }
+    .home-loan-features .home-loan-takeover.loan-maxloan-bg {
+        margin: 30px 0 0 0;
+    }
+
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+.customer-care .man-with-lap {
+ 
+    width: 33% !important;
+ 
+}
+                         
+.digital-banking .col-lg-10.offset-md-4.col-md-12 {
+       padding-left: 18%;
+       margin-left: 18.333333%;
+}
+/*.digital-banking .col-lg-10.offset-md-4.col-md-12 {
+    margin-left: 5%;
+}
+.man-with-lap:before {
+    content: '';
+    position: absolute;
+    background-color: #00000078;
+    width: 100%;
+    height: 100%;
+}
+
+.customer-care .man-with-lap img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}*/
+
+/*section#DigitalServices .medium-h5
+{
+ color: #fff;	
+}
+
+main.customer-care section#DigitalServices .write-wrap.loan-card.mt-3 .inner-title {
+    font-size: 18px;
+    color: #fff;
+}
+main.customer-care section#DigitalServices .write-wrap.loan-card a.btn-link {
+    color: #ffffff;
+    font-size: 14px;
+}*/
+section#locateus .man-with-lap {
+    width: 49% !important;
+}
+.pt-md-0
+{
+	padding-top: 0;
+}
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+section.home-loan-overview.suv-feat-hindi .home-loan-overview-list {
+    min-height: 250px;
+}
+ section.home-loan-overview.suv-feat-eng .home-loan-overview-list{
+ 	 min-height: 140px;
+ }
+.word-brek
+{
+	word-break: break-word;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .list-group.list-group-links {
+        display: initial;
+    }
+    .list-group.list-group-links a {
+        margin: 0 12px 12px 0;
+        padding: 10px 42px;
+    }
+    .breadcrum-sec:before {
+        top: 58px;
+    }
+    .left-menu-bottom {
+        display: none;
+    }
+    .home-loan-overview .home-banner-caption {
+        width: 50%;
+        padding: 0 20px;
+    }
+    .home-loan-overview .home-banner-caption h1 {
+        font-size: 18px;
+    }
+    .home-loan-features .home-loan-takeover.loan-maxloan-bg {
+        margin: 30px 0 0 0;
+    }
+    .home-loan-eligibility .overview-special-offers {
+        background-size: 100%;
+        height: 159px;
+    }
+    .home-loan-eligibility .special-offers h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .home-loan-eligibility .special-offers-title {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .home-loan-eligibility .special-offers a {
+        font-size: 13px;
+        width: auto;
+        margin: 5px 0 0 0;
+    }
+    .home-loan-overview .overview-special-offers .special-offers-img {
+        width: 50%;
+    }
+    .home-loan-overview .overview-special-offers {
+        align-items: center;
+    }
+    .home-loan-facility .link-card {
+        padding: 15px;
+        min-height: 200px;
+        align-items: flex-start;
+    }
+    .home-loan-features .home-loan-takeover .max-loan-amount p.max-loan-amount-para {
+        line-height: initial;
+        margin: 0;
+    }
+    .home-loan-features .home-loan-takeover .max-loan-amount p.max-loan-amount-title {
+        line-height: initial;
+    }
+    .home-loan-eligibility .card {
+        height: 100%;
+    }
+    .documentation .green-a {
+        justify-content: flex-start;
+        margin: 15px 0 0 0;
+    }
+    .code-of-conduct.how-to-apply .coc-banner img {
+        height: 75%;
+        position: relative;
+    }
+    .code-of-conduct.how-to-apply .coc-banner-cont {
+        width: 58%;
+        transform: translate(0, -45%);
+        position: absolute;
+        left: auto;
+        top: 50%;
+        right: 0;
+        padding: 20px;
+    }
+    .how-to-apply-banner .coc-banner-cont h2 {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        line-height: normal;
+    }
+    .coc-banner.how-to-apply-banner {
+        height: auto;
+    }
+    .how-to-apply-banner .coc-banner-cont h6 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .apply-online .list-group.list-group-links a {
+      width: 47.34%;
+     padding: 10px 30px;
+}
+.ml-md-10
+{
+margin-left: 20px !important;
+}
+.apply-now .download-forms .statue-grid {
+    width: 47.2%;
+        margin-left: 0px;
+}
+.apply-now .statue-box {
+    display: table;
+ }
+
+section#DigitalServices .col-lg-10.offset-md-4.col-md-12 {
+    padding: 10px 40px;
+}
+.customer-care .man-with-lap img {
+ 	
+    object-position: center;
+}
+.customer-care .calculator-model.p-0 {
+    width: 50%;
+}
+main.customer-care .coc-banner-cont {
+    width: 54%;
+        padding: 10% 0;
+    transform: translate(0, -5%);
+}
+main.customer-care .coc-banner.how-to-apply-banner a.btn.btn-orange.mb-5 {
+    margin-bottom: 10px !important;
+}
+.digital-banking .col-lg-10.offset-md-4.col-md-12 {
+    padding-left: 40% !important;
+    margin-left: 0;
+}
+ .analyst-pg .statue-grid{
+      	padding: 25px 20px;
+      }
+      .grievance-pg .calculator-model {
+    padding: 5px 20px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+    .payment-on ul li {
+        width: 45%;
+    }
+    .customer-care .customer-phone-banking .man-with-lap {
+        position: relative;
+        width: 100%;
+    }
+    .customer-care-service .cusomer-care-service-section {
+        width: 100%;
+        padding: 0px 20px 75% 0;
+    }
+    .bg-person {
+        margin: 50px 0 0 0;
+    }
+    .customer-care .man-with-lap {
+        position: relative;
+        width: 100%;
+    }
+    .customer-care .servies-card {
+        width: 46%;
+    }
+    .customer-care .customer-locateus .man-with-lap {
+        width: 100%;
+    }
+    .digital-banking.customer-locateus {
+        padding: 0;
+    }
+    .customer-education .rights-section li {
+        width: 100%;
+    }
+    .customer-education .rights-section li:last-child {
+        margin-bottom: 0;
+    }
+    .home-loan-features .home-loan-takeover {
+        margin:0 0 15px 0;
+    }
+    .home-loan-features .home-loan-takeover.loan-maximum-bg {
+        margin: 0 0 15px 0;
+    }
+    .inner-banner-caption h1 br {
+        display: none;
+    }
+    .loan-card.card .card-body {
+        padding: 10px 18px;
+    }
+    .breadcrum-sec {
+        position: relative;
+    }
+    .breadcrum-sec::before {
+        content: none;
+        background: #f9f9f9;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: -10%;
+    }
+    .breadcrum-sec::after {
+        content: '';
+        background: #f9f9f9;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        /* right: -10%; */
+        height: 100%;
+        z-index: -1;
+    }
+    .inner-banner {
+        height: auto;
+    }
+    .inner-banner-caption {
+    top: 20px;
+    width: 100% !important;
+    text-align: center;
+    padding: 0 20px;
+    transform: translateY(0);
+    }
+    .inner-banner-caption h1 {
+        font-size: 25px;
+          text-align: center;
+    }
+    .home-loan-eligibility .special-offers h4 {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 20px 0;
+    }
+    .left-menu-bottom {
+        display: none;
+    }
+    .home-loan-overview.p-0,
+    .board-of-direct.home-loan-facility,
+    .home-loan-features {
+        padding: 0 0px !important;
+    }
+    .mobile-img {
+        border-radius: 1px;
+    }
+    .home-loan-features .home-loan-takeover.loan-maxloan-bg {
+        margin: 0;
+    }
+    /* .breadcrum-sec {
+        padding: 5px 15px;
+    } */
+    /* main .custom-container {
+        padding: 0;
+    } */
+    .documentation .green-a {
+        justify-content: flex-start;
+    }
+    /* .left-menu.desktop {
+        display: none;
+    }
+    .left-menu.mobile {
+        display: block;
+    } */
+    .left-menu.mobile .login-btns {
+        background: #4FA9A7;
+    }
+    .left-menu.mobile .login-btns button {
+        color: #fff;
+        width: 100%;
+        text-align: left;
+    }
+    .left-menu.mobile .login-btns .dropdown-menu {
+        width: 100%;
+    }
+    .left-menu.mobile .login-btns .dropdown-menu .dropdown-item {
+        padding-left: 15px;
+    }
+    .no-padding-mobile {
+        padding: 0;
+    }
+    .desktop-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+    }
+    .home-loan-overview .home-loan-banner {
+        position: relative;
+        margin: 0 0 30px 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .home-loan-overview .home-banner-caption {
+        position: absolute;
+        top: 0;
+        width: auto;
+        transform: translateY(0%);
+        padding: 0 20px;
+        left: 0;
+        right: 0;
+        padding-top: 30px;
+    }
+  
+    .home-loan-overview .home-banner-caption h1 {
+        text-align: center;
+    }
+    .home-loan-overview .home-banner-caption .btn-group {
+        width: 100%;
+    }
+    .home-loan-overview .home-banner-caption p {
+        text-align: center;
+    }
+    .home-loan-overview .home-loan-overview-list {
+        margin: 0 0 15px 0;
+    }
+    .home-loan-overview .overview-special-offers {
+        flex-wrap: wrap;
+    }
+    .home-loan-overview .overview-special-offers .special-offers {
+        width: 100%;
+    }
+    /* .home-loan-features .home-loan-takeover.loan-maximum-bg {
+        margin: 15px 0;
+    } */
+    .home-loan-eligibility .col-md-6 .card {
+        margin: 0 0 15px 0;
+    }
+    .home-loan-eligibility .col-md-6:last-child .card {
+        margin: 15px 0 0px 0;
+    }
+    .home-loan-eligibility .special-offers {
+        width: auto;
+        top: 0;
+        transform: initial;
+        left: 0;
+        right: 0;
+        padding: 30px;
+    }
+    .media-corner-head {
+        flex-wrap: wrap;
+    }
+    .documentation .idbi-dd {
+        max-width: 100%;
+        width: 100%;
+    }
+    .documentation .documentaion-section {
+        margin: 0 0 15px 0;
+    }
+    .documentation {
+        border: 1px solid #EFEFEF;
+        margin: 30px 0px;
+        padding: 20px;
+    }
+    .documentation .disclaimer {
+        margin: 0 0 20px 0;
+    }
+    .statue-box.hta-box {
+        flex-wrap: wrap;
+    }
+    .statue-grid.hta-grid {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .board-direct-bottom.hta-bottom {
+        flex-wrap: wrap;
+    }
+    .how-to-apply .board-direct-bottom.hta-bottom {
+        margin: 15px 0 0 0;
+            display: inline-block;
+
+    }
+
+    .board-direct-bottom.hta-bottom a {
+    display: block;
+}
+    .how-to-apply .board-direct-bottom .btn.btn-orange.view-all.git {
+        margin: 0 0 15px 0;
+    }
+
+    .home-loan-facility,
+    .home-loan-advantage,
+    .home-loan-eligibility,
+    .board-of-direct,
+    .home-loan-features,
+    .homeloan-payment,
+    .how-to-apply,
+    .how-to-apply-banner,
+    .homeloan-faq {
+        margin: 40px 0 0 0;
+        padding: 0 0px;
+    }
+    .home-loan-eligibility .overview-special-offers {
+        padding: 20px 30px;
+        color: #FFFFFF;
+        position: relative;
+        background: url(../assets/images/home-loan/responsive/home-loan-help-banner-nobile.png) no-repeat;
+        height: 500px;
+        width: 100%;
+        margin: 30px 0 0 0;
+        background-size: 100% 500px;
+    }
+    .home-loan-facility .slider.board-of-direct-slider .slick-list {
+        padding-right: 60px;
+        }
+        .code-of-conduct.how-to-apply .coc-banner-cont {
+        width: auto;
+        transform: translate(0, 0%);
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px;
+    }
+    .code-of-conduct.how-to-apply {
+        padding: 0;
+    }
+    .coc-banner.how-to-apply-banner {
+        height: auto;
+        padding: 0;
+    }
+    .coc-banner img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+        height: auto;
+    }
+    .home-loan-overview .home-banner-caption a.btn {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    main.customer-care .coc-banner-cont {
+    left: 10%;
+    width: 90%;
+}
+.customer-care .servies-card {
+    width: 45%;
+}
+    main.customer-care .calculator-model.p-0 {
+    width: 100%;
+}
+.digital-banking .col-lg-10.offset-md-4.col-md-12 {
+    padding-left: 0% !important;
+    margin-left: 0;
+}
+.analyst-pg .view-svg {
+    margin-left: 30px;
+}
+.flexi-bond-pg .statue-grid{
+padding: 30px 38px;
+}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .type-of-employment {
+        display: block;
+    }
+    .type-of-employment span {
+    margin: 5px 10px;
+    display: inline-block;
+    }
+    .apply-online .list-group-links a {
+        width: 100%;
+    }
+
+    main.home-loan-hindi .how-to-apply .board-direct-bottom .btn.btn-orange.view-all.git {
+    margin: 0 0 0px 0;
+    margin-right: 15px;
+}
+.home-loan-facility .board-of-direct-slider .slick-arrow {
+    display: none !important;
+}
+.apply-online .list-group.list-group-links a {
+    width: 100%;
+    padding: 10px 30px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.ml-md-10 {
+    margin-left: 0px !important;
+}
+
+}
+@media only screen and (min-width: 1919px) {
+
+  .left-menu.sticky-bar {
+    position: fixed;
+    width: calc(100% - 83.5%) !important;
+}
+
+  .nav-item.dropdown-nav .dropdown-menu {
+   
+    margin-left: 10px;
+}
+  .footer-accordion {
+    width: 280px;
+}
+
+.write-to-us, .footer-social-links {
+    padding: 0 50px !important;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+  
+.footer-accordion {
+    position: relative;
+}
+.footer-accordion .card-body {
+    background-color: #222223;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+        max-height: 240px;
+    overflow-y: auto;
+
+
+}
+
+
+}
+
+@media only screen and (max-width: 1919px) {
+   .left-menu::-webkit-scrollbar {
+
+  display:none
+}
+
+
+    .left-menu {
+  
+    overflow-y: auto;
+      scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+  .mega-dropdown-menu li.list-group-item {
+    padding: 15px 50px;
+
+}
+
+  .profile-info .social-links li a {
+  
+    width: 30px;
+    height: 30px;
+}
+
+  .logo {
+    width: 200px;
+}
+  .select-lang {
+    margin-right: 0;
+  }
+
+  .home-slider .custom-container {
+    width: 82%;
+  }
+
+  .top-header .nav-link {
+    padding: 0 10px !important;
+  }
+
+  .mega-dropdown-menu {
+    width: 85%;
+}
+  header .navbar{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .custom-container {
+    width: 88%;
+    margin: auto;
+  }
+
+  .loan-card.card .card-text ul li a {
+    font-size: 16px;
+    color: #444444;
+  }
+
+  button.slide-arrow.next-arrow.slick-arrow {
+    right: 100px;
+  }
+
+  button.slide-arrow.prev-arrow.slick-arrow {
+    left: 20px;
+  }
+  button.slide-arrow.prev-arrow.slick-arrow svg:hover {
+    fill: #f9f9f9;
+  }
+  .lady-vector {
+    margin: 65px 0 10px 0;
+    overflow: hidden;
+  }
+
+  .servies-card {
+    width: 130px;
+  }
+
+  .loan-card.card .card-text .btn-group .btn {
+    padding: 10px 10px;
+  }
+
+  .sticky-nav li {
+    padding: 10px 10px;
+  }
+
+  .home-slider .item .slide-caption .heading {
+    font-size: 40px;
+  }
+
+  .heading-1 {
+    font-size: 40px;
+  }
+
+  .menu-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  header .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+
+.profile-info {
+    padding: 20px 15px;
+}
+
+
+
+  .corporate-header .menu > li {
+    padding: 13px 2px;
+   
+}
+
+.footer-links .list-inline-item {
+    margin-right: 12px;
+}
+
+  .chat-box {
+    max-height: 550px;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .loan-card.card .icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .loan-card.card .card-body {
+    padding: 18px 12px;
+  }
+  .sticky-nav ul li a svg {
+    width: 25px;
+    height: 25px;
+  }
+  .logo {
+    width: 160px;
+  }
+
+  .loan-card.card {
+    padding: 10px 5px 50px;
+  }
+  .servies-card {
+    margin: 8px 6px;
+  }
+  header .nav-link {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .sticky-nav li {
+  
+    width: 70px;
+    height: 70px;
+
+}
+
+.sticky-nav ul li a svg {
+    width: 20px;
+    height: 20px;
+}
+  .select-lang {
+    padding: 12px 0;
+  }
+
+  .top-header .login-btns .btn {
+    min-width: 140px;
+  }
+  .logo {
+    width: 150px;
+  }
+
+  main .custom-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  /* header {
+    z-index: auto;
+  } */
+
+  main {
+    margin-top: 60px;
+  }
+
+  main .custom-container {
+    width: 100%;
+  }
+    .nre-account-pg .home-loan-features .home-loan-takeover {
+       height: 637px;
+    max-height: 662px;
+      } 
+}
+
+@media only screen and (max-width: 991px) {
+
+  .home-loan-features .home-loan-takeover {
+    margin: 0 0 15px 0;
+}
+  button.slide-arrow.next-arrow.slick-arrow {
+    right: 20px;
+}
+
+  .credit-card .calculator-model {
+    padding: 5px 0;
+}
+
+.credit-card .calculator-model .nav-tabs {
+  
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+}
+
+  .nre-account-pg .home-loan-features .home-loan-takeover {
+    height: auto;
+    max-height: initial;
+}
+
+
+  .nre-account-pg .link-card {
+  
+    align-items: center;
+}
+
+  main.nre-account-pg .inner-title {
+    margin-top: 20px;
+}
+
+  .bond-holders .statues-head {
+    margin: 30px 0 0;
+}
+
+.bond-holders .nav-tabs-style-1 .nav-tabs .nav-link{
+      padding: 15px 20px;
+
+}
+
+  .modal-style-1 .modal-content {
+  
+    padding: 20px 10px;
+}
+
+  #BondHolders img {
+    display: block;
+    margin: 20px 0;
+}
+
+  .investors-page .inner-banner-caption {
+    top: 52%;
+    
+}
+
+.investors-page .grey-box .btn-orange{
+margin-bottom: 10px;
+}
+
+.investors-page  .list-style-2 .arrow-right {
+ 
+    display: none;
+}
+
+  #Escalation > .inner-title {
+    padding: 20px 20px 0;
+    margin: 0;
+}
+
+#Escalation .nav-tabs .nav-link {
+    width: 70px;
+ 
+}
+
+  .float-right-xs{
+    float: left;
+  }
+
+  #Presentations .statue-grid{
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs-style-1 .nav-tabs .nav-link {
+   
+    margin-right: 10px;
+ 
+}
+
+  .grid-item, .grid-sizer {
+    width: 100%;
+}
+
+  .box-with-radius{
+    margin-bottom: 20px;
+  }
+  footer .write-to-us, #footer-accordion {
+    margin: 0px 0 0 0;
+}
+
+  .p-xs-0 {
+    padding: 0;
+}
+
+  .left-menu ul li:first-child {
+    margin-bottom: 0;
+  }
+
+  ul.left-scroll-menu li:not(:first-child) {
+    display: none;
+  }
+
+  .chat-support {
+    bottom: 12%;
+    margin: 10px;
+  }
+  .chat-box {
+    width: 100%;
+    max-height: 570px;
+
+    margin-right: 0;
+  }
+  .whats-new {
+    height: 50px;
+  }
+
+  .headline-title {
+    font-size: 18px;
+
+    min-width: 170px;
+
+    margin-right: 20px;
+  }
+  .headline-text {
+    font-size: 14px;
+  }
+
+  .loan-card.card .card-text .btn-group .btn {
+    padding: 8px 18px;
+  }
+
+  .flex-direction-reverse-xs {
+    flex-direction: column-reverse;
+  }
+
+  .man-with-lap {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .heading-1 {
+    font-size: 30px;
+  }
+  .servies-card {
+    width: 46%;
+    padding: 30px 16px 20px;
+  }
+
+  section.apps-sec {
+    padding: 50px 0 0;
+    text-align: center;
+  }
+
+  .other-links-sec {
+    padding: 40px 0;
+  }
+
+  .link-card {
+    padding: 0 20px;
+    height: 160px;
+    margin: 6px 0;
+  }
+
+  .other-links-sec .heading-1 {
+    margin-bottom: 30px;
+  }
+
+  footer .footer-top-nav a {
+    padding: 10px 8px;
+    display: inline-block;
+  }
+
+  footer .footer-top-nav {
+    text-align: left;
+  }
+
+  footer .footer-links a {
+padding: 10px 0px;
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+
+  ul.footer-social-links {
+    margin: 0 -2px;
+ 
+}
+
+.footer-bottom .container-fluid {
+    padding: 0;
+}
+
+  footer .write-to-us,
+  footer .footer-accordion {
+    margin: 0px 0 0 0;
+  }
+  footer .write-to-us {
+    margin: 30px 0 0 0;
+  }
+
+  ul.footer-links {
+    margin-bottom: 30px;
+  }
+
+footer .footer-bottom p, footer .footer-bottom a {
+
+    padding: 7px 0;
+}
+
+
+footer .footer-bottom p.designby {
+    justify-content: end;
+}
+
+  footer .footer-bottom-links {
+
+    padding: 10px 0;
+        display: block !important;
+  }
+
+  .appstore-links {
+    margin-bottom: 20px;
+  }
+
+  .digital-banking {
+    padding: 0 0;
+  }
+
+  .quick-links-card {
+    margin-bottom: 30px;
+    padding: 40px 30px 100%;
+  }
+
+  .slide-caption .btn {
+    margin-top: 15px;
+  }
+
+  .justify-content-center-xs {
+    justify-content: center;
+  }
+
+  .servies-cards {
+    margin: 10px 0;
+  }
+
+  .lady-vector {
+    margin: 15px 0 0px 0;
+  }
+
+  .loan-sec {
+    padding: 20px 0 0;
+  }
+
+  .home-slider .item .slide-caption .heading {
+    font-size: 28px;
+  }
+
+  .home-slider .item .slide-caption {
+    text-align: center;
+    left: 50%;
+    top: 20px;
+    width: 80%;
+    transform: translate(-50%, 0px);
+  }
+
+  .home-slider .item .slide-caption p {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .slide-caption br {
+    display: none;
+  }
+
+  .sticky-nav {
+    border-radius: 10px 10px 0 0;
+    top: auto;
+    transform: none;
+
+    bottom: 0;
+    left: 0;
+  }
+
+  .chat-box::after {
+    bottom: -24px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    right: 50px;
+  }
+
+  .sticky-nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sticky-nav li:not(:last-child) {
+    border-right: 0.5px solid rgb(255 255 255 / 24%);
+  }
+  .sticky-nav li {
+    padding: 8px 5px;
+    flex: 0 0 18.666667%;
+    max-width: 18.666667%;
+  }
+
+  .login-btns .dropdown-menu {
+    top: 18px !important;
+  }
+
+  footer .footer-support {
+    bottom: 15%;
+  }
+
+  header {
+    position: static;
+  }
+
+  .chat-icon {
+    margin-right: 0px;
+  }
+
+  .loan-card.card .icon {
+    margin: 10px 30px 0px;
+  }
+
+  .loan-card.card .icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .search-bar {
+    width: 72%;
+    position: fixed;
+    margin-left: -60px;
+    top: 9px;
+  }
+
+
+
+footer .footer-bottom-links li {
+    margin-left: 0;
+
+    display: inline-block;
+}
+
+.heading br {
+    display: none;
+}
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+ 
+   .grid-item, .grid-sizer {
+    width: 48%;
+}
+  .servies-card {
+    width: 31.6%;
+  }
+
+  .search-bar {
+    margin-left: 50px;
+  }
+
+  .quick-links-card {
+    margin-bottom: 30px;
+    padding: 40px 30px 30px;
+    background-image: none;
+}
+main.finanacial-reports-main .documentation .green-a {
+    justify-content: flex-start;
+    margin: 0px 0 0 0;
+}
+ 
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+ 
+ .grid-item, .grid-sizer {
+    width: 44%;
+}
+ .search-bar {
+    width: 84%;
+    position: fixed;
+    top: 10px;
+}
+  .link-card {
+    margin-bottom: 0;
+  }
+
+  footer .footer-bottom p.designby {
+ 
+    margin-top: 15px;
+}
+.servies-card {
+    width: 46.6%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+.left-menu {
+    position: -webkit-static;
+    position: static;
+    top: 150px;
+}
+
+
+  .apps-sec .flex-direction-reverse-xs {
+    flex-direction: inherit;
+  }
+  .word-brek {
+    word-break: break-word;
+}
+}
+
+@media only screen and (max-width: 767px) {
+
+  .flex-direction-col-xs{
+        flex-direction: column!important;
+
+  }
+
+  .align-items-left-xs{
+        align-items: end !important;
+
+  }
+
+  .website, .globe-icon{
+        margin-top: 20px;
+
+  }
+  #DownloadFAQ .btn-orange.view-all.git.float-right-xs {
+    margin-bottom: 20px;
+}
+ 
+
+  .home-slider .slick-slide img {
+  
+    height: 525px;
+    object-fit: cover;
+}
+
+  .flex-direction-column-xs{
+        flex-direction: column;
+
+  }
+
+  .team-details .per-designation {
+   
+    margin-bottom: 5px;
+ 
+}
+
+.team-details .per-info {
+  
+    margin-top: 20px;
+}
+
+  .team-details .d-flex {
+    display: block !important;
+}
+
+ul.social-links{
+    padding: 0;
+}
+
+  .team-member img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+hr.hr-style-1 {
+  
+    margin: 20px 0 0px 0;
+}
+
+  .desktop-banner {
+    display: none;
+}
+
+.mobile-banner {
+    display: block;
+}
+ 
+   .quick-links-card {
+    background-position: 100% 202%;
+    background-size: 50%;
+    padding: 40px 30px 30%;
+
+  }
+
+  .home-slider .item .slide-caption {
+      width: 90%;
+
+}
+  .loan-card.card .card-title {
+    color: #000000;
+  }
+  .loan-card.card {
+    margin: 0 0 10px 0;
+  }
+  .loan-card.card .card-text ul {
+    margin-bottom: 20px;
+  }
+  .quick-links-card {
+    background-position: 100% 125%;
+    padding: 40px 30px 75%;
+    background-size: 100%;
+  }
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(1),
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(3),
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(5) {
+    padding-right: 7px;
+  }
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(2),
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(4),
+  .other-links-sec .col-md-2.col-md-4.col-lg-2.col-6:nth-child(6) {
+    padding-left: 7px;
+  }
+  
+  .code-of-conduct-pg .sb-inner
+  {  width: auto;  }
+
+  .code-of-conduct-pg .statue-grid:last-child {
+    margin-right: 50px;}
+
+	.code-of-conduct-pg .statue-box.horizontal-scroll {
+	    margin-bottom: 0;
+	    margin-right: 5%;
+	} 
+
+ .pt-md-0
+{
+	padding-top: 0;
+
+} 
+
+.di-md-block
+{
+	display: block !important;
+}    
+.mt-md-20
+{
+	margin-top: 20px;
+}
+.documentation a.svg-a.green-a.mt-pt-10  
+{
+	    margin: 0px 0 0 0;
+    padding: 10px 0;
+display: block;
+    text-align: left !important;
+    padding-left: 20px;
+}
+
+}
+
+
+.journey-slider-top .slick-slide.slick-current.slick-active h3:before {
+	content: '';
+	height: 20px;
+	width: 20px;
+	box-shadow: 0px 5px 10px rgb(0 0 0 / 30%);
+	border-radius: 50%;
+	position: absolute;
+	background: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -30px
+}
+
+.journey-slider-top .slick-slide.slick-current.slick-active h3:after {
+	content: '';
+	position: absolute;
+	background: #00836c;
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	bottom: -24px;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.journey-slider-top ul.slick-dots {
+	display: none
+}
+
+
+@media only screen and (max-width: 320px){
+
+  .btn-sm {
+
+    min-width: 130px;
+
+}
+.servies-card {
+    margin: 8px 5px;
+    height: auto;
+}
+}
+
+.classification-accord .card-title span:first-child{
+width:90%;
+}
